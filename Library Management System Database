@@ -1,0 +1,368 @@
+USE library_db
+
+
+CREATE TABLE library_branch (
+	branchID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	branchName VARCHAR (40) NOT NULL,
+	branchAddress VARCHAR (100) NOT NULL
+)
+
+CREATE TABLE publisher (
+	publisher_name VARCHAR (100) PRIMARY KEY NOT NULL,
+	publisher_address VARCHAR (100) NOT NULL,
+	publisher_contact VARCHAR (20) NOT NULL
+)
+
+CREATE TABLE books (
+	bookID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	bookTitle VARCHAR (40) NOT NULL,
+	publisherID VARCHAR(100) NOT NULL CONSTRAINT fk_publisherID FOREIGN KEY REFERENCES publisher(publisher_name) ON UPDATE CASCADE ON DELETE CASCADE
+)
+
+CREATE TABLE book_copies (
+	bookID INT NOT NULL CONSTRAINT fk_bookcopyID FOREIGN KEY REFERENCES books(bookID) ON UPDATE CASCADE ON DELETE CASCADE, 
+	branchID INT NOT NULL CONSTRAINT fk_branchID FOREIGN KEY REFERENCES library_branch(branchID) ON UPDATE CASCADE ON DELETE CASCADE,
+	num_of_copies INT NOT NULL
+)
+
+CREATE TABLE borrower (
+	cardNum INT PRIMARY KEY NOT NULL IDENTITY (3215,1),
+	borrowerName VARCHAR (40) NOT NULL,
+	borrowerAddress VARCHAR (100) NOT NULL,
+	borrowerNum VARCHAR (40) NOT NULL
+)
+
+CREATE TABLE book_loans (
+	bookID INT NOT NULL CONSTRAINT fk_bookloanID FOREIGN KEY REFERENCES books(bookID) ON UPDATE CASCADE ON DELETE CASCADE,
+	branchID INT NOT NULL CONSTRAINT fk_branchloanID FOREIGN KEY REFERENCES library_branch(branchID) ON UPDATE CASCADE ON DELETE CASCADE,
+	cardNum INT CONSTRAINT fk_cardNum FOREIGN KEY REFERENCES borrower(cardNum) ON UPDATE CASCADE ON DELETE CASCADE,
+	dateOut VARCHAR (50),
+	dateDue VARCHAR(50) 
+)
+
+CREATE TABLE book_authors (
+	bookID INT NOT NULL CONSTRAINT fk_bookauthorID FOREIGN KEY REFERENCES books(bookID) ON UPDATE CASCADE ON DELETE CASCADE,
+	authorName VARCHAR (40) NOT NULL
+)
+
+
+INSERT INTO library_branch
+	(branchName, branchAddress)
+	VALUES
+	('Sharpstown', '123 Sharpstown St'),
+	('Central', '777 chicken ave'),
+	('Maintown', '199 3rd St'),
+	('Pebble lake', '1284 Newton Ave')
+
+	SELECT * FROM library_branch
+
+
+INSERT INTO publisher
+	(publisher_name, publisher_address, publisher_contact)
+	VALUES
+	('Pearson', '1298 Roberts Blvd', '988-352-7789'),
+	('Penguin Random House', '1492 Emerits St', '228-195-4484'),
+	('Oxford', '456 Right Ln', '771-527-3183'),
+	('Bloomsbury', '1342 Hollows Ave', '447-566-6656')
+
+	SELECT * FROM publisher
+
+
+INSERT INTO books
+	(bookTitle, publisherID)
+	VALUES
+	('The Lost Tribe', 'Pearson'),
+	('The Redtailed Fox', 'Penguin Random House'),
+	('Fighters Fight', 'Pearson'),
+	('Lone Survivor', 'Oxford'),
+	('Goosebumps', 'Oxford'),
+	('100 Years', 'Bloomsbury'),
+	('Dedication', 'Penguin Random House'),
+	('Run Away', 'Bloomsbury'),
+	('Far From Home', 'Pearson'),
+	('Signs From Above', 'Oxford'),
+	('Dreams', 'Penguin Random House'),
+	('Fallen Heros', 'Penguin Random House'),
+	('The Field', 'Pearson'),
+	('Exceptional Americans', 'Oxford'),
+	('Fantastic Creations', 'Pearson'),
+	('Tesla', 'Pearson'),
+	('Aliens in the Skies', 'Pearson'),
+	('Advanced AI', 'Penguin Random House'),
+	('Jumping Johnny', 'Bloomsbury'),
+	('Hard Body Karate', 'Pearson'),
+	('Catch him', 'Oxford'),
+	('Port', 'Bloomsbury'),
+	('Phenomenol Experience', 'Pearson'),
+	('Hitch and Yaw', 'Penguin Random House'),
+	('Way Down Under', 'Oxford'),
+	('Never Back Down', 'Bloomsbury'),
+	('Mythodical Tactics', 'Bloomsbury'),
+	('The Boring Book', 'Penguin Random House'),
+	('Extreme Events', 'Oxford'),
+	('Skateboarding Tips', 'Penguin Random House'),
+	('The Perfect Game', 'Pearson'),
+	('Hatchet', 'Bloomsbury'),
+	('Running Zebras', 'Pearson'),
+	('The Scrapyard', 'Penguin Random House'),
+	('IT', 'Oxford'),
+	('The Shining', 'Oxford')
+
+	SELECT * FROM books
+
+
+INSERT INTO book_authors
+	(bookID, authorName)
+	VALUES
+	(36, 'Stephen King'),
+	(2, 'JK Rowling'),
+	(23, 'RL STINE'),
+	(32, 'Dean Koontz'),
+	(5, 'Jeff Kinney'),
+	(11, 'Lee Child'),
+	(6, 'Jack Weissman'),
+	(14, 'Donald Duck'),
+	(12, 'Stan Lee'),
+	(10, 'Steve Ditko')
+	
+	SELECT * FROM book_authors
+
+
+INSERT INTO book_copies
+	(bookID, branchID, num_of_copies)
+	VALUES
+	(1, 1, 3),
+	(2, 3, 3),
+	(3, 2, 2),
+	(4, 4, 5),
+	(5, 1, 2),
+	(6, 1, 3),
+	(7, 3, 2),
+	(8, 3, 3),
+	(9, 2, 3),
+	(10, 4, 3),
+	(11, 4, 2),
+	(12, 1, 3),
+	(13, 2, 4),
+	(14, 2, 3),
+	(15, 4, 4),
+	(16, 1, 4),
+	(17, 2, 5),
+	(18, 4, 2),
+	(19, 4, 2),
+	(20, 3, 2),
+	(21, 2, 3),
+	(22, 1, 4),
+	(23, 2, 3),
+	(24, 1, 2),
+	(25, 4, 4),
+	(26, 3, 3),
+	(27, 3, 2),
+	(28, 1, 2),
+	(29, 4, 4),
+	(30, 3, 3),
+	(31, 2, 5),
+	(32, 3, 5),
+	(33, 1, 2),
+	(34, 4, 4),
+	(35, 1, 2),
+	(36, 3, 2),
+
+	(1, 2, 3),
+	(2, 4, 3),
+	(3, 1, 2),
+	(4, 3, 5),
+	(5, 2, 2),
+	(6, 4, 3),
+	(7, 2, 2),
+	(8, 1, 3),
+	(9, 3, 3),
+	(10, 3, 3),
+	(11, 3, 2),
+	(12, 1, 3),
+	(13, 1, 4),
+	(14, 3, 3),
+	(15, 3, 4),
+	(16, 2, 4),
+	(17, 1, 5),
+	(18, 3, 2),
+	(19, 2, 2),
+	(20, 1, 2),
+	(21, 4, 3),
+	(22, 2, 4),
+	(23, 1, 3),
+	(24, 4, 2),
+	(25, 3, 4),
+	(26, 1, 3),
+	(27, 2, 2),
+	(28, 2, 2),
+	(29, 3, 4),
+	(30, 2, 3),
+	(31, 3, 5),
+	(32, 4, 5),
+	(33, 2, 2),
+	(34, 3, 4),
+	(35, 2, 2),
+	(36, 2, 4)
+
+
+	SELECT * FROM book_copies
+
+	
+
+
+INSERT INTO borrower
+	(borrowerName, borrowerAddress, borrowerNum)
+	VALUES
+	('Jack Doesntread', '231 Bad St', '887-898-7778'),
+	('Brent Michaels', '2311 State St', '888-998-4555'),
+	('Jack Kane', '444 Heisman Ln', '989-565-1256'),
+	('Jody Pike', '112 Elm Rd', '545-656-6656'),
+	('Jacky Beck', '1233 Porch Rd', '222-555-1414'),
+	('Ryan Adams', '6569 Amy Bay Rd', '847-658-6654'),
+	('Cliff Jones', '7989 Florence Ave', '545-565-5458'),
+	('Johnny Bravo', '466 Cool St', '818-558-5215'),
+	('Camille Jackson', '121 Darlington Ct', '511-1212-2279'),
+	('Alyssa Zietz', '4689 Angular Rd', '215-555-4545')
+
+	UPDATE borrower
+	SET borrowerNum = '884-226-2589'
+	WHERE cardNum = 3223
+
+	UPDATE borrower
+	SET borrowerNum = '884-226-2589', borrowerName = 'Joe Marty', borrowerAddress = '121 clay Ave'
+	WHERE cardNum = 3215
+
+
+
+	SELECT * FROM borrower
+
+
+
+INSERT INTO book_loans
+	(bookID, branchID, cardNum, dateOut, dateDue)
+	VALUES
+	(1, 2, 3215, '8-9-18', '8-14-18'),
+	(2, 3, 3216, '8-10-18', '8-15-18'),
+	(3, 2, 3222, '8-9-18', '8-14-18'),
+	(4, 4, 3224, '8-11-18', '8-16-18'),
+	(5, 1, 3215, '8-10-18', '8-15-18'),
+	(6, 1, 3219, '8-9-18', '8-14-18'),
+	(7, 3, 3220, '8-9-18', '8-14-18'),
+	(8, 3, 3224, '8-9-18', '8-14-18'),
+	(9, 2, 3223, '8-10-18', '8-15-18'),
+	(10, 4, 3222, '8-11-18', '8-16-18'),
+	(11, 4, 3215, '8-12-18', '8-17-18'),
+	(12, 1, 3222, '8-13-18', '8-18-18'),
+	(13, 2, 3222, '8-10-18', '8-15-18'),
+	(14, 2, 3217, '8-9-18', '8-14-18'),
+	(15, 4, 3221, '8-9-18', '8-14-18'),
+	(16, 1, 3220, '8-10-18', '8-15-18'),
+	(17, 2, 3219, '8-11-18', '8-16-18'),
+	(18, 4, 3215, '8-12-18', '8-17-18'),
+	(19, 4, 3219, '8-13-18', '8-18-18'),
+	(20, 3, 3222, '8-14-18', '8-19-18'),
+	(21, 2, 3221, '8-10-18', '8-15-18'),
+	(22, 1, 3220, '8-9-18', '8-14-18'),
+	(23, 2, 3215, '8-9-18', '8-14-18'),
+	(24, 1, 3216, '8-11-18', '8-16-18'),
+	(25, 4, 3218, '8-12-18', '8-17-18'),
+	(26, 3, 3221, '8-13-18', '8-18-18'),
+	(27, 3, 3215, '8-9-18', '8-14-18'),
+	(28, 1, 3220, '8-10-18', '8-15-18'),
+	(29, 4, 3219, '8-9-18', '8-14-18'),
+	(30, 3, 3215, '8-9-18', '8-14-18'),
+	(31, 2, 3216, '8-12-18', '8-17-18'),
+	(32, 3, 3215, '8-11-18', '8-16-18'),
+	(33, 1, 3217, '8-10-18', '8-15-18'),
+	(34, 4, 3219, '8-11-18', '8-16-18'),
+	(35, 1, 3218, '8-9-18', '8-14-18'),
+	(36, 3, 3221, '8-14-18', '8-19-18'),
+	(4, 4, 3221, '8-11-18', '8-16-18'),
+	(5, 1, 3218, '8-12-18', '8-17-18'),
+	(6, 1, 3215, '8-10-18', '8-15-18'),
+	(7, 3, 3221, '8-10-18', '8-15-18'),
+	(8, 3, 3223, '8-9-18', '8-14-18'),
+	(9, 2, 3224, '8-10-18', '8-15-18'),
+	(10, 4, 3221, '8-11-18', '8-16-18'),
+	(11, 4, 3216, '8-14-18', '8-14-18'),
+	(12, 1, 3221, '8-9-18', '8-14-18'),
+	(13, 2, 3220, '8-9-18', '8-14-18'),
+	(14, 2, 3219, '8-14-18', '8-19-18'),
+	(15, 4, 3220, '8-10-18', '8-11-18'),
+	(16, 1, 3221, '8-12-18', '8-17-18'),
+	(17, 2, 3218, '8-13-18', '8-18-18'),
+	(18, 4, 3216, '8-12-18', '8-17-18'),
+	(19, 4, 3217, '8-10-18', '8-15-18'),
+	(20, 3, 3223, '8-11-18', '8-16-18')
+
+	SELECT * FROM book_loans
+
+
+
+
+
+	/*------------------QUERIES-------------------*/
+
+
+	SELECT 
+		a2.branchName, a3.bookTitle, a1.num_of_copies
+		FROM book_copies a1
+		INNER JOIN library_branch a2 ON a2.branchID = a1.branchID
+		INNER JOIN books a3 ON a3.bookID = a1.bookID		
+		WHERE a2.branchName = 'Sharpstown' AND a3.bookTitle = 'The Lost Tribe'
+
+
+	SELECT 
+		a2.branchName, a3.bookTitle, a1.num_of_copies
+		FROM book_copies a1
+		INNER JOIN library_branch a2 ON a2.branchID = a1.branchID
+		INNER JOIN books a3 ON a3.bookID = a1.bookID		
+		WHERE a3.bookTitle = 'The Lost Tribe'
+
+
+	SELECT 
+		a2.borrowerName,
+		COUNT(a1.cardNum) AS 'Books_Checked_Out'
+		FROM borrower a2
+		LEFT OUTER JOIN book_loans a1 ON a1.cardNum = a2.cardNum
+		GROUP BY a2.borrowerName
+		HAVING COUNT(a1.cardNum) = 0		
+
+
+
+	SELECT 
+		a2.bookTitle, a1.borrowerName, a1.borrowerAddress
+		FROM book_loans a3
+		INNER JOIN books a2 ON a2.bookID = a3.bookID
+		INNER JOIN library_branch a4 ON a4.branchID = a3.branchID
+		INNER JOIN borrower a1 ON a3.cardNum = a1.cardNum
+		WHERE a4.branchName = 'Sharpstown' AND a3.dateDue = '8-14-18'
+
+
+	SELECT 
+		a2.branchName,
+		COUNT(*) AS 'Books Loaned'
+		FROM book_loans a1
+		INNER JOIN library_branch a2 ON a2.branchID = a1.branchID
+		GROUP BY a2.branchName
+
+
+
+	SELECT 
+		a2.borrowerName,a2.borrowerAddress,
+		COUNT(a1.cardNum) AS 'Books_Checked_Out'
+		FROM borrower a2
+		LEFT OUTER JOIN book_loans a1 ON a1.cardNum = a2.cardNum
+		GROUP BY a2.borrowerName, a2.borrowerAddress
+		HAVING COUNT(a1.cardNum) > 5	
+
+
+
+	SELECT 
+		a1.bookTitle AS 'Book Title', a2.num_of_copies AS 'Number of Copies'
+		FROM book_copies a2
+		INNER JOIN books a1 ON a2.bookID = a1.bookID
+		INNER JOIN book_authors a3 ON a1.bookID = a3.bookID 
+		INNER JOIN library_branch a4 ON a4.branchID = a2.branchID
+		WHERE a4.branchName = 'Central' AND a3.authorName = 'Stephen King'
