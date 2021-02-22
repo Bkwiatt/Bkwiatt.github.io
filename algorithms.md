@@ -2,6 +2,8 @@
 
 This project is a data structures and algorithms project I worked on for a class I took back in 2017. This project utilized the linked list data structure, and it was basically a program to handle and store data for eBay listing data. I think using a linked list project in my eportfolio was a good option because it not only shows my understanding of data structures, but it also shows my direct use with pointers.
 
+After going back and improving this project, I learned how important reviewing code is because I immediately noticed some sloppy mistakes that I had made before. The hardest part about this was ensuring it was bug free because when it comes to using data structures, there’s a lot that can go wrong and in a lot of real world cases, could case security flaws.    
+
 ```
 //============================================================================
 // Name        : LinkedList.cpp
