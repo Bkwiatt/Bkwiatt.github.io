@@ -2,6 +2,8 @@
 
 The first artifact that I made enhancements too is an iOS application about avocados that I created as practice about 6 months ago. It was mainly to understand the swift programming language, but it also ended up being good practice for many other computer science and programming concepts. This artifact showed my knowledge for object-oriented programming, some aspects of data structures, impressive front end UI design and much more. Overall, this project shows many different skills that I have and that’s why I think it is a great project to include in my ePortfolio.
 
+After adding enhancements, first thing I knew would be crucial for all my future projects are comments. It would have been so much easier for me to understand what and why I did something if I had added comments. But because I didn’t, it quickly got very confusing. This was probably my biggest challenge as well. It was very difficult to understand what I did in certain parts of my programming. But overall, this project and it’s included enhancements is definitely a good project to display my skills on my ePortfolio.
+
 ```
 //
 //  ContentView.swift
