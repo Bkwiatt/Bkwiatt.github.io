@@ -1,3 +1,6 @@
+# Library Database Managament System
+
+The database artifact, is a project I worked on for a SQL course I took about 3 years ago where I created a database system for a library. This system would manage things like inventory, checked out books, due dates, etc. I think this system is pretty complex and required quite a bit of SQL code so it definitely shows that I can hard code a SQL table.
 
 ```
 USE library_db
