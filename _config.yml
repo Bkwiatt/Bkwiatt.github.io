@@ -2,6 +2,14 @@ layout: page
 title: "Database"
 permalink: /database/
 
+layout: page
+title: "Algorithm"
+permalink: /algorithms/
+
+layout: page
+title: "Design"
+permalink: /design/
+
 
 theme: jekyll-theme-hacker
 title: Welcome to Brandon's Portfolio!
