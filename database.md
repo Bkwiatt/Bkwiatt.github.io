@@ -2,6 +2,7 @@
 
 The database artifact, is a project I worked on for a SQL course I took about 3 years ago where I created a database system for a library. This system would manage things like inventory, checked out books, due dates, etc. I think this system is pretty complex and required quite a bit of SQL code so it definitely shows that I can hard code a SQL table.
 
+When I first created this project, I knew I was comfortable with SQL and creating databases, but I definitely forgot some things. I wanted to challenge myself a bit with this artifact and give it an enhancement that would allow me to relearn SQL really well at the same time. I didn’t really face many challenges but I learned a lot and improved my skills when it comes to databases. 
 ```
 USE library_db
 
