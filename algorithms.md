@@ -1,3 +1,7 @@
+# Linked List Ebay bid handling
+
+is a data structures and algorithms project I worked on for a class I took back in 2017. This project utilized the linked list data structure, and it was basically a program to handle and store data for eBay listing data. I think using a linked list project in my eportfolio was a good option because it not only shows my understanding of data structures, but it also shows my direct use with pointers.
+
 ```
 //============================================================================
 // Name        : LinkedList.cpp
