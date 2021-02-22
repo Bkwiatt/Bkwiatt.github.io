@@ -11,8 +11,8 @@
 
 # Projects
 
-[test](database.md)
+[Library Database Management System](database.md)
 
-[Bkwiatt.github.io/design](design.md)
+[Bkwiatt.github.io/Avocados iOS Application](design.md)
 
-[Bkwiatt.github.io/algorithms](algorithms.md)
+[Bkwiatt.github.io/Linked List eBay Bid Handler](algorithms.md)
