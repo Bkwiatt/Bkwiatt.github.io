@@ -13,6 +13,6 @@
 
 [Library Database Management System](database.md)
 
-[Bkwiatt.github.io/Avocados iOS Application](design.md)
+[Avocados iOS Application](design.md)
 
-[Bkwiatt.github.io/Linked List eBay Bid Handler](algorithms.md)
+[Linked List eBay Bid Handler](algorithms.md)
