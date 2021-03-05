@@ -15,7 +15,7 @@
     "react-scroll": "^1.8.1",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.1.0",
-    "homepage": "http://bkwiatt.github.io/"
+    "homepage": "http://bkwiatt.github.io/Bkwiatt.github.io"
   },
   "scripts": {
     "start": "react-scripts start",
