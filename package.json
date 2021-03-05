@@ -2,6 +2,7 @@
   "name": "bkwebsite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bkwiatt.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -14,8 +15,8 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.1",
     "styled-components": "^5.2.1",
-    "web-vitals": "^1.1.0",
-    "homepage": "http://bkwiatt.github.io/Bkwiatt.github.io"
+    "web-vitals": "^1.1.0"
+    
   },
   "scripts": {
     "start": "react-scripts start",
