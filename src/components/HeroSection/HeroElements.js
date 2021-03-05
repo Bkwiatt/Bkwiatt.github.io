@@ -42,6 +42,7 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a43;
+    -webkit-playsinline: autoPlay;
 `
 
 export const HeroContent = styled.div`
