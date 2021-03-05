@@ -15,10 +15,10 @@ const onHover = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted playsinline src={Video} type='/video/mp4' />
+                <VideoBg playsinline autoPlay loop muted src={Video} type='/video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Brandon Kwiatkowski</HeroH1>
+                <HeroH1>Brandon wiatkowski</HeroH1>
                 <HeroP>Software Developer</HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
