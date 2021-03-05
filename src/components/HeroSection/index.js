@@ -18,7 +18,7 @@ const onHover = () => {
                 <VideoBg autoPlay loop muted playsinline src={Video} type='/video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Brandon Kwiatkowski</HeroH1>
+                <HeroH1>Brandon </HeroH1>
                 <HeroP>Software Developer</HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
