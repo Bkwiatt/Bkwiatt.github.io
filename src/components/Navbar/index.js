@@ -16,7 +16,7 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to="about">About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="resume">Resume</NavLinks>
+                            <NavLinks to="skills">Skills</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="projects">Projects</NavLinks>
@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/signin">Sign in</NavBtnLink>
+                        <NavBtnLink to="/resume">Résumé</NavBtnLink>
                     </NavBtn>
 
                 </NavbarContainer>
