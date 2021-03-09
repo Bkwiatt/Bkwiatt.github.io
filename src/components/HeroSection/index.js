@@ -15,7 +15,7 @@ const onHover = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoplay loop muted playsinline src={Video} type='/video/mp4' />
+                <VideoBg autoPlay loop muted playsinline src={Video} type='/video/mp4' />
             </HeroBg>
             <HeroContent>
                 <HeroH1>Brandon Kwiatkowski</HeroH1>
