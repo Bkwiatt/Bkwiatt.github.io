@@ -1,12 +1,12 @@
 import React from 'react'
+import ResumePage from '../components/Resume'
 
-const ResumePage = () => {
+const Resume = () => {
     return (
-        <><div>
-            <h1>resume page</h1>
-        </div>
+        <>
+            <ResumePage />
         </>
     )
 }
 
-export default ResumePage
+export default Resume
