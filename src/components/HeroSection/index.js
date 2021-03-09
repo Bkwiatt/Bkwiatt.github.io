@@ -19,7 +19,7 @@ const onHover = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>Brandon Kwiatkowski</HeroH1>
-                <HeroP>| Software Developer |</HeroP>
+                <HeroP>Software Developer</HeroP>
                 <HeroBtnWrapper>
                     <Button to="resume" onMouseEnter={onHover} onMouseLeave={onHover}>
                         Resume {hover ? <ArrowForward /> : <ArrowRight/>}
