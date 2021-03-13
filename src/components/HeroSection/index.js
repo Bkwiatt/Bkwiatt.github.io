@@ -21,8 +21,8 @@ const onHover = () => {
                 <HeroH1>Brandon Kwiatkowski</HeroH1>
                 <HeroP>Software Developer</HeroP>
                 <HeroBtnWrapper>
-                    <Button to="/resume" onMouseEnter={onHover} onMouseLeave={onHover}>
-                        Resume {hover ? <ArrowForward /> : <ArrowRight/>}
+                    <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover} smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        Contact Me {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
 
                 </HeroBtnWrapper>

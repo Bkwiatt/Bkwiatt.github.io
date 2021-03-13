@@ -7,16 +7,17 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: "Text area 1",
-    headline: "headling area for more information",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at consectetur neque. Aenean nunc augue, mattis a magna et, accumsan egestas massa. Nunc tincidunt cursus accumsan.",
+    topLine: "About Me",
+    headline: "24 years young",
+    description: "I'm a huge fan of all things technology! I love sports, especially baseball. I'm from the Chicagoland area so I'm a big Cubs fan. You can find me spending my free time at the gym, playing Warzone or hanging out by a body of water.",
     buttonLabel: 'Lets go',
     imgStart: false,
     img: Icon1,
     alt: 'Car',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    buttonLocation: 'skills'
 }
 
 export const homeObjTwo = {
@@ -24,31 +25,33 @@ export const homeObjTwo = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: "Text area 1",
+    topLine: "Skills",
     headline: "headling area for more information",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at consectetur neque. Aenean nunc augue, mattis a magna et, accumsan egestas massa. Nunc tincidunt cursus accumsan.",
     buttonLabel: 'Lets go',
     imgStart: true,
-    img: Icon2,
-    alt: 'Car',
-    dark: false,
-    primary: false,
-    darkText: true
-}
-
-export const homeObjThree = {
-    id: "projects",
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: "Text area 1",
-    headline: "headling area for more information",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at consectetur neque. Aenean nunc augue, mattis a magna et, accumsan egestas massa. Nunc tincidunt cursus accumsan.",
-    buttonLabel: 'Lets go',
-    imgStart: false,
     img: Icon3,
     alt: 'Car',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    buttonLocation: 'projects'
+}
+
+export const homeObjThree = {
+    id: "contact",
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: "Contact",
+    headline: "Feel free to reach out!",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at consectetur neque. Aenean nunc augue, mattis a magna et, accumsan egestas massa. Nunc tincidunt cursus accumsan.",
+    buttonLabel: 'Email Me!',
+    imgStart: false,
+    img: Icon2,
+    alt: 'Car',
+    dark: false,
+    primary: false,
+    darkText: true,
+    buttonLocation: 'mailto: bkwiat7@gmail.com'
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
+import { FooterContainer, FooterLinkId, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
 import {animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
@@ -15,11 +15,11 @@ const Footer = () => {
                     <FooterLinksContainer>
                         <FooterLinksWrapper>
                             <FooterLinkItems>
-                                <FooterLinkTitle>Links</FooterLinkTitle>
-                                <FooterLink to="/resume">About me</FooterLink>
-                                <FooterLink to="/resume">Skills</FooterLink>
-                                <FooterLink to="/resume">Projects</FooterLink>
-                                <FooterLink to="/resume">Contact</FooterLink>
+                                <FooterLinkTitle>Quick Links</FooterLinkTitle>
+                                <FooterLinkId to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About me</FooterLinkId>
+                                <FooterLinkId to="skills" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Skills</FooterLinkId>
+                                <FooterLinkId to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Projects</FooterLinkId>
+                                <FooterLinkId to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</FooterLinkId>
                                 <FooterLink to="/resume">Resume</FooterLink>
                             </FooterLinkItems>
                         </FooterLinksWrapper>
@@ -34,13 +34,13 @@ const Footer = () => {
                                 <SocialIconLink href='//www.twitter.com/bkwiatt' target="_blank" aria-label="Twitter">
                                     <FaTwitter />
                                 </SocialIconLink>
-                                <SocialIconLink href='/' target="_blank" aria-label="Github">
+                                <SocialIconLink href='//www.github.com/Bkwiatt' target="_blank" aria-label="Github">
                                     <FaGithub />
                                 </SocialIconLink>
-                                <SocialIconLink href='/' target="_blank" aria-label="Linkedn">
+                                <SocialIconLink href='//www.linkedin.com/in/bkwiat/' target="_blank" aria-label="Linkedn">
                                     <FaLinkedin />
                                 </SocialIconLink>
-                                <SocialIconLink href='/' target="_blank" aria-label="Instagram">
+                                <SocialIconLink href='//www.instagram.com/bkwiatt/' target="_blank" aria-label="Instagram">
                                     <FaInstagram />
                                 </SocialIconLink>
                             </SocialIcons>
