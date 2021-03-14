@@ -12,9 +12,9 @@ const Sidebar = ( {isOpen, toggle} ) => {
                     <SidebarLink to='about' onClick={toggle}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                     >About</SidebarLink>
-                    <SidebarLink to="resume" onClick={toggle}
+                    <SidebarLink to="skills" onClick={toggle}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
-                    >Resume</SidebarLink>
+                    >Skills</SidebarLink>
                     <SidebarLink to="projects" onClick={toggle}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                     >Projects</SidebarLink>
