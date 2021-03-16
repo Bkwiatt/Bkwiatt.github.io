@@ -7,8 +7,8 @@ const ResumePage = () => {
         <>
             <ResumeContainer>
                 <ResumeWrapper>
-                    <ResumeCard>
-                        <ResumeImg src="https://cdn3.iconfinder.com/data/icons/business-round-flat-vol-1-1/36/user_account_profile_avatar_person_male-512.png" alt="avatar" />
+                    <ResumeCard >
+                        <ResumeImg src="https://icon-library.net/images/avatar-icon-images/avatar-icon-images-4.jpg" alt="avatar" />
                         <ResumeH2>Brandon Kwiatkowski</ResumeH2>
                         <ResumeH4>Programmer</ResumeH4>
                         <ResumeHr/>
@@ -17,14 +17,14 @@ const ResumePage = () => {
                             who’s dedicated to mastering his craft and never settling for anything less than top level performance.</ResumeP>
                         <ResumeHr/>
                         <ResumeH5>Location</ResumeH5>
-                        <ResumeP>Cary, IL</ResumeP>
+                        <ResumeA href="https://goo.gl/maps/VxVavTjMyUgLZEmk6" target="_blank">Cary, IL</ResumeA>
                         <ResumeH5>Phone</ResumeH5>
                         <ResumeA href="tel:847-951-6388">(847) 951-6388</ResumeA>
                         <ResumeH5>Email</ResumeH5>
-                        <ResumeA style={{ color: "black" }} href="mailto: Bkwiat7@gmail.com">Bkwiat7@gmail.com</ResumeA>
+                        <ResumeA href="mailto:Bkwiat7@gmail.com">Bkwiat7@gmail.com</ResumeA>
                         <ResumeH5>Web</ResumeH5>
-                        <ResumeA href= "http://Bkwiatt.github.io">Bkwiatt.github.io</ResumeA>                        
-                        <hResumeHr/>
+                        <ResumeA href= "http://Bkwiatt.github.io" target="_blank">Bkwiatt.github.io</ResumeA>                        
+                        <ResumeHr/>
                     </ResumeCard>
                         <ResumeCard>
                         <ResumeH2>Education/Experience</ResumeH2>
