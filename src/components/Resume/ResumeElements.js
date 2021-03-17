@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const ResumeContainer = styled.div`
     background-color: #3b3838;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0 15px;
     height: 100vh;
     overflow-x: hidden;
@@ -17,15 +15,17 @@ export const ResumeContainer = styled.div`
 `
 
 export const ResumeWrapper = styled.div`
-    max-width: 1000px;  
-    margin: 0 auto;
+    max-width: 1000px; 
+    margin-top: 20px;
+    margin-left: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 25vw 70vw;
     align-items: center;
-    grid-gap: 16px;
+    grid-gap: 20px;
 
     @media screen and (max-width: 480px) {
         grid-template-columns: 1fr;
+        margin: 10px auto;
     }
 `
 
@@ -57,7 +57,7 @@ export const ResumeHr = styled.hr`
     width: 50%;
     border: 0;
     border-top: 3px solid #800080;
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: 1.5em;
     padding: 0;
 `

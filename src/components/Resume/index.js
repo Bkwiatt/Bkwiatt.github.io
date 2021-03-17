@@ -1,5 +1,6 @@
 import React from 'react';
 import Video from '../../videos/video.mp4'
+import { Button } from '../ButtonElement'
 import { ResumeContainer, ResumeWrapper, ResumeCard, ResumeH2, ResumeH4, ResumeHr, ResumeP, ResumeH5, ResumeA, ResumeImg } from './ResumeElements'
 
 const ResumePage = () => {
@@ -7,7 +8,7 @@ const ResumePage = () => {
         <>
             <ResumeContainer>
                 <ResumeWrapper>
-                    <ResumeCard >
+                    <ResumeCard style ={{backgroundColor: 'lightblue'}}>
                         <ResumeImg src="https://icon-library.net/images/avatar-icon-images/avatar-icon-images-4.jpg" alt="avatar" />
                         <ResumeH2>Brandon Kwiatkowski</ResumeH2>
                         <ResumeH4>Programmer</ResumeH4>
@@ -26,10 +27,13 @@ const ResumePage = () => {
                         <ResumeA href= "http://Bkwiatt.github.io" target="_blank">Bkwiatt.github.io</ResumeA>                        
                         <ResumeHr/>
                     </ResumeCard>
-                        <ResumeCard>
-                        <ResumeH2>Education/Experience</ResumeH2>
+                    <ResumeCard>
+                    <ResumeH2>Education</ResumeH2>
 
-                        </ResumeCard>
+                        <h4>hi</h4>
+
+                    </ResumeCard>
+                    <Button to='/'>Home</Button>
 
                 </ResumeWrapper>
             </ResumeContainer>
