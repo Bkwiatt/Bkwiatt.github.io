@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ResumeContainer = styled.div`
-    background-color: #3b3838;
+    background-color: white;
     display: flex;
     padding: 0 15px;
     height: 100vh;
@@ -10,31 +10,30 @@ export const ResumeContainer = styled.div`
     z-index: 1;  
 
     @media screen and (max-Width: 480px) {
-        height: 1150px;
+        height: 100%;
     }
 `
 
 export const ResumeWrapper = styled.div`
     max-width: 1000px; 
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left:15px;
     display: grid;
-    grid-template-columns: 25vw 70vw;
+    grid-template-columns: 30vw 70vw;
     align-items: center;
     grid-gap: 20px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 970px) {
         grid-template-columns: 1fr;
         margin: 10px auto;
     }
 `
 
-export const ResumeCard = styled.div`
-    background: #d3d3d3;
+export const ResumeCardLeft = styled.div`
+    background: lightblue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: left;
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -43,38 +42,93 @@ export const ResumeCard = styled.div`
     transition: all 0.2s ease-in-out;
 `
 
-export const ResumeH2 = styled.h2`
-    font-size: 1.5rem;
+export const ResumeCardRight = styled.div`
+    background: #27221F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px;
+    padding-right: 100px;
+    box-shadow: 0 1px 3px rgba(0,0,0,2);
+    transition: all 0.2s ease-in-out;
 `
 
-export const ResumeH4 = styled.h4`
+// Left card Styles
+export const ResumeLeftH2 = styled.h2`
+    font-size: 3.5em;
+`
+
+export const ResumeLeftH4 = styled.h4`
     color: #959595;
+    margin: 0;
 `
 
-export const ResumeHr = styled.hr`
+export const ResumeLeftHr = styled.hr`
     display: block;
-    height: 1px;
-    width: 50%;
-    border: 0;
+    width: 60%;
     border-top: 3px solid #800080;
     margin-top: 1em;
     margin-bottom: 1.5em;
     padding: 0;
 `
 
-export const ResumeP = styled.p`
+export const ResumeLeftP = styled.p`
+    color: #000;
 `
 
-export const ResumeH5 = styled.h5`
-    padding-top: 10px;
-    padding-bottom: 10px;
+export const ResumeLeftH5 = styled.h5`
+    margin-top: 15px;
+    margin-bottom: 15px;
 `
 
-export const ResumeA = styled.a`
+export const ResumeLeftA = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+`
+
+
+// Right card Styles
+export const ResumeRightH2 = styled.h2`
+    font-size: 3.5em;
+
+    @media screen and (max-Width: 750px) {
+        font-size: 3.2em;
+    }
+`
+
+export const ResumeRightH4 = styled.h4`
+    color: #fff;
+    margin-bottom: 15px;
+`
+
+export const ResumeRightHr = styled.hr`
+    display: block;
+    width: 100%;
+    align-self: center;
+    border-top: 3px solid #e22947;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    padding: 0;
+`
+
+export const ResumeRightP = styled.p`
+    color: white;
+`
+
+export const ResumeRightH5 = styled.h5`
+    margin-top: 15px;
+    margin-bottom: 15px;
+`
+
+export const ResumeRightA = styled.a`
 
 `
+
 export const ResumeImg = styled.img`
-    height: 250px;  
-    margin-bottom: 60px;
+    height: 200px;  
     align-self: center;
 `
