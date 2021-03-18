@@ -1,9 +1,10 @@
 import React from 'react';
 import Video from '../../videos/video.mp4'
+import avatar1 from '../../images/avatar1.jpg'
 import { Button } from '../ButtonElement'
 import Education from './Education';
 import Experience from './Experience'
-import { ResumeContainer, ResumeWrapper, ResumeCardLeft, ResumeCardRight, ResumeLeftH2, ResumeLeftH4, ResumeLeftHr, ResumeLeftP, ResumeLeftH5, ResumeLeftA, ResumeRightH2, ResumeRightH4, ResumeRightHr, ResumeRightP, ResumeRightH5, ResumeRight, ResumeImg } from './ResumeElements'
+import { ResumeContainer, ResumeWrapper, ResumeCardLeft, ResumeCardRight, ResumeLeftH2, ResumeLeftH4, ResumeLeftHr, ResumeLeftP, ResumeLeftH5, ResumeLeftA, ResumeRightH2, ResumeRightH4, ResumeRightHr, ResumeRightP, ResumeRightH5, ResumeRight, ResumeImg, ResumeRoute } from './ResumeElements'
 
 const ResumePage = () => {
     return (
@@ -11,7 +12,7 @@ const ResumePage = () => {
             <ResumeContainer>
                 <ResumeWrapper>
                     <ResumeCardLeft>
-                        <ResumeImg src="https://icon-library.net/images/avatar-icon-images/avatar-icon-images-4.jpg" alt="avatar" />
+                        <ResumeImg src={avatar1} alt="avatar" />
                         <ResumeLeftH2>Brandon Kwiatkowski</ResumeLeftH2>
                         <ResumeLeftH4>Programmer</ResumeLeftH4>
                         <ResumeLeftHr />
@@ -35,67 +36,76 @@ const ResumePage = () => {
                             startYear={2015}
                             endYear={2017}
                             schoolName={"Mchenry County College"}
-                            schoolDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
+                            degree={"Computer Science, B.S"}
                         />
                         <Education
-                                startYear={2018}
-                                endYear={2019}
-                                schoolName={"University of Wisconsin Whitewater"}
-                                schoolDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
-                            />
+                            startYear={2018}
+                            endYear={2019}
+                            schoolName={"University of Wisconsin Whitewater"}
+                            degree={"Computer Science, B.S"}
+                        />
 
-                            <Education
-                                startYear={2019}
-                                endYear={2019}
-                                schoolName={"The Tech Academy | C# & .NET Bootcamp"}
-                                schoolDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
-                            />
+                        <Education
+                            startYear={2019}
+                            endYear={2019}
+                            schoolName={"The Tech Academy | C# & .NET Bootcamp"}
+                            degree={"Computer Science Related Studies"}
+                        />
 
-                            <Education
-                                startYear={2019}
-                                endYear={2020}
-                                schoolName={"Southern New Hampshire University"}
-                                schoolDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
-                            />
+                        <Education
+                            startYear={2019}
+                            endYear={2020}
+                            schoolName={"Southern New Hampshire University"}
+                            degree={"Computer Science, B.S"}
+                        />
 
-                            <ResumeRightHr />
 
-                            <ResumeRightH2>Experience</ResumeRightH2>
+                        <ResumeRightHr />
 
-                            <Experience
-                                startYear={2014}
-                                endYear={2015}
-                                jobName={"Best Buy"}
-                                jobTitle={"Electronics Salesman"}
-                                jobDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
-                            />
+                        <ResumeRightH2>Experience</ResumeRightH2>
 
-                            <Experience
-                                startYear={2015}
-                                endYear={2016}
-                                jobName={"HK Mehchanical"}
-                                jobTitle={"HVAC Apprentice"}
-                                jobDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
-                            />
+                        <Experience
+                            startYear={2014}
+                            endYear={2015}
+                            jobName={"Best Buy"}
+                            jobTitle={"Electronics Salesman"}
+                            jobDescription={"In charge of selling a wide variety of home appliance and home theater equipment. Was expected to learn many about many different technology related products."}
+                        />
 
-                            <Experience
-                                startYear={2016}
-                                endYear={2017}
-                                jobName={"Precision Duct Design"}
-                                jobTitle={"Sheet Metal Fabricator"}
-                                jobDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
-                            />
+                        <Experience
+                            startYear={2015}
+                            endYear={2016}
+                            jobName={"HK Mehchanical"}
+                            jobTitle={"HVAC Apprentice"}
+                            jobDescription={"Assisted in the installation of HVAC equipment into commercial and residential buildings."}
+                        />
 
-                            <Experience
-                                startYear={2019}
-                                endYear={2021}
-                                jobName={"Duraflex"}
-                                jobTitle={"Warehouse Specialist"}
-                                jobDescription={"uspendisse luctus ornare libero quis lobortis. Vivamus mauris justo, ultrices quis ligula in, hendrerit interdum ipsum. Maecenas eleifend ante id est elementum, eget tristique quam porta. Proin pharetra fringilla ante"}
-                            />
-                            <ResumeRightHr />
+                        <Experience
+                            startYear={2016}
+                            endYear={2017}
+                            jobName={"Precision Duct Design"}
+                            jobTitle={"Sheet Metal Fabricator"}
+                            jobDescription={"Operated and maintained a linux based CNC plasma cutter. Fabricated HVAC Ductwork and fitting parts."}
+                        />
+
+                        <Experience
+                            startYear={2018}
+                            endYear={2018}
+                            jobName={"Prosper IT Consulting"}
+                            jobTitle={"Web Developer"}
+                            jobDescription={"Worked on a web application with a team using Team Foundation Server where we utilized c# and ASP.NET MVC."}
+                        />
+
+                        <Experience
+                            startYear={2019}
+                            endYear={2021}
+                            jobName={"Duraflex"}
+                            jobTitle={"Warehouse Specialist"}
+                            jobDescription={"Completed various different warehouse assignments as well as assuring and tracking quality on high priority aerospace components for companies such as SpaceX, Boeing and more."}
+                        />
+                        <ResumeRightHr />
                     </ResumeCardRight>
-                    <Button to='/'>Home</Button>
+                    <ResumeRoute to='/'>Home</ResumeRoute>
 
                 </ResumeWrapper>
             </ResumeContainer>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 export const ResumeContainer = styled.div`
     background-color: white;
@@ -19,7 +20,7 @@ export const ResumeWrapper = styled.div`
     margin-top: 10px;
     margin-left:15px;
     display: grid;
-    grid-template-columns: 30vw 70vw;
+    grid-template-columns: 30vw 65vw;
     align-items: center;
     grid-gap: 20px;
 
@@ -52,9 +53,10 @@ export const ResumeCardRight = styled.div`
     width: 100%;
     border-radius: 10px;
     padding: 25px;
-    padding-right: 100px;
     box-shadow: 0 1px 3px rgba(0,0,0,2);
     transition: all 0.2s ease-in-out;
+
+ 
 `
 
 // Left card Styles
@@ -117,6 +119,7 @@ export const ResumeRightHr = styled.hr`
 
 export const ResumeRightP = styled.p`
     color: white;
+    margin: 8px 0 0 0 ;
 `
 
 export const ResumeRightH5 = styled.h5`
@@ -131,4 +134,27 @@ export const ResumeRightA = styled.a`
 export const ResumeImg = styled.img`
     height: 200px;  
     align-self: center;
+`
+
+export const ResumeRoute = styled(LinkR)`
+    border-radius: 50px;
+    background: #01bf71;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #27221F;
+        color: #fff;
+    }
 `

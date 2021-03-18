@@ -5,7 +5,7 @@ import { ResumeRightP, ResumeRightH4 } from './ResumeElements'
 class Experience extends Component {
     render() {
         return (
-            <Grid>
+            <Grid style={{padding: 0, margin: "15px 0 15px 0"}}>
                 <Cell col={4}>
                     <ResumeRightP>{this.props.startYear} - {this.props.endYear}</ResumeRightP>
                     
