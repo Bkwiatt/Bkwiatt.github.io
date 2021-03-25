@@ -1,14 +1,36 @@
 import React from 'react';
-import { ProjectsContainer, ProjectTypeWrapper, CardWrapper, ProjectRoute, ProjectsWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo } from '../Projects/ProjectsElements'
+import { ProjectsContainer, ProjectTypeWrapper, CardWrapper, ProjectRoute, ProjectsWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ProjectTypeMenu, NavItem, MobileIcon, NavLogo } from '../Projects/ProjectsElements'
 import img1 from '../images/codingimg.jpeg'
+import { FaBars } from 'react-icons/fa';
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ toggle }) => {
     return (
         <>
             <ProjectsContainer>
                 <ProjectTypeWrapper>
-                    <ProjectRoute to='/'>Home</ProjectRoute>
+                    <NavLogo to='/'>Bk</NavLogo>                    
+                    <ProjectTypeMenu>
+                        <NavItem>
+                            C#
+                        </NavItem>
+                        <NavItem>
+                            iOS
+                        </NavItem>
+                        <NavItem>
+                            SQL
+                        </NavItem>
+                        <NavItem>
+                            React
+                        </NavItem>
+                    </ProjectTypeMenu>
+                    <MobileIcon onClick={toggle}>
+                            <FaBars />
+                    </MobileIcon>
+                    <ProjectRoute to='/resume'>Résumé</ProjectRoute>
                 </ProjectTypeWrapper>
+
+
+                
                 <ProjectsWrapper>
                     <CardWrapper>
                         <CardImgWrap>
@@ -46,7 +68,6 @@ const ProjectsPage = () => {
                     </CardWrapper>
                 </ProjectsWrapper>
             </ProjectsContainer>
-
         </>
         
          

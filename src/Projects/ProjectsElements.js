@@ -6,18 +6,22 @@ export const ProjectsContainer = styled.div`
     height: 100vh;
     z-index: 1;
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
         height: 100%;
     }
 `
 
 export const ProjectTypeWrapper = styled.div`
     display: flex;
-    border-bottom: 2px solid green;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    margin: 0 auto;
+    height: 80px;
+    z-index: 1;
     width: 100%;
+    border-bottom: 2px solid green;
     color: #FFF;
-    height: 60px;
-    padding: 5px;
+    max-width: 1500px;
 `
 
 export const ProjectsWrapper = styled.div`
@@ -25,7 +29,6 @@ export const ProjectsWrapper = styled.div`
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
 
@@ -63,12 +66,11 @@ export const ProjectRoute = styled(LinkR)`
     border-radius: 50px;
     background: #01bf71;
     text-align: center;
-    margin: 5px 0px 0px 5px;
-    padding: 10px;
-    width: 200px;
-    font-weight: bold;
+    padding: 11px;
+    width: 120px;
+    margin: 18px 0px 18px 0px;
     white-space: nowrap;
-    color: #010606;
+    color: #000;
     font-size: 16px;
     outline: none;
     border: none;
@@ -78,8 +80,12 @@ export const ProjectRoute = styled(LinkR)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #27221F;
-        color: #fff;
+        background: #FFF;
+        color: #000;
+    }
+
+    @media screen and (max-width: 460px) {
+        display: none;
     }
 
 `
@@ -116,4 +122,60 @@ export const CardImg = styled.img`
 
 export const CardInfo = styled.div`
     padding: 0px 25px 25px 25px;
+`
+
+export const ProjectTypeMenu = styled.ul`
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`
+
+export const NavItem = styled.li`
+    margin:  0 auto;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+        color: #01bf71;
+        cursor: pointer;
+    }
+`
+
+export const MobileIcon = styled.div`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    }
+`
+
+export const NavLogo = styled(LinkR)`
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: red;
+        transform: scale(1.1); 
+
+    }
 `
