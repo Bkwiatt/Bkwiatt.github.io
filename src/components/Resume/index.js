@@ -1,10 +1,8 @@
 import React from 'react';
-import Video from '../../videos/video.mp4'
 import avatar1 from '../../images/avatar1.jpg'
-import { Button } from '../ButtonElement'
 import Education from './Education';
 import Experience from './Experience'
-import { ResumeContainer, ResumeWrapper, ResumeCardLeft, ResumeCardRight, ResumeLeftH2, ResumeLeftH4, ResumeLeftHr, ResumeLeftP, ResumeLeftH5, ResumeLeftA, ResumeRightH2, ResumeRightH4, ResumeRightHr, ResumeRightP, ResumeRightH5, ResumeRight, ResumeImg, ResumeRoute } from './ResumeElements'
+import { ResumeContainer, ResumeWrapper, ResumeCardLeft, ResumeCardRight, ResumeLeftH2, ResumeLeftH4, ResumeLeftHr, ResumeLeftP, ResumeLeftH5, ResumeLeftA, ResumeRightH2, ResumeRightHr, ResumeImg, ResumeRoute } from './ResumeElements'
 
 const ResumePage = () => {
     return (

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 
 export const ServicesContainer = styled.div`
@@ -81,5 +82,26 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
+`
+
+export const ProjectRoute = styled(LinkR)`
+    border-radius: 50px;
+    background: #01bf71;
+    text-align: center;
+    white-space: nowrap;
+    margin: 10px auto;
+    padding: 16px 64px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+    }
 `
 

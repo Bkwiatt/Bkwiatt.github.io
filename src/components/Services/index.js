@@ -4,7 +4,7 @@ import Icon2 from '../../images/svg-2.svg'
 import Icon3 from '../../images/svg-3.svg'
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
-import {ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from './ServicesElements'
+import {ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP, ProjectRoute} from './ServicesElements'
 
 const Services = () => {
     return (
@@ -28,6 +28,7 @@ const Services = () => {
                         <ServicesP>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla, nibh at commodo facilisis</ServicesP>
                     </ServicesCard>
                 </ServicesWrapper>
+                <ProjectRoute to='/projectspage'>See More</ProjectRoute>
             </ServicesContainer>
         </>
     )

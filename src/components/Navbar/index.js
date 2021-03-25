@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
 
                     </NavbarContainer>
                 </Nav>
-            </IconContext.Provider >
+            </IconContext.Provider>
         </>
     )
 }
