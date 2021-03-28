@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 
 export const ProjectsContainer = styled.div`
     background: #0c0c0c;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
 
     @media screen and (max-width: 768px) {
@@ -16,6 +16,7 @@ export const ProjectTypeWrapper = styled.div`
     justify-content: space-between;
     padding: 0px 20px 0px 20px;
     margin: 0 auto;
+    margin-bottom: 100px;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -25,28 +26,30 @@ export const ProjectTypeWrapper = styled.div`
 `
 
 export const ProjectsWrapper = styled.div`
+    display: flex;
     max-width: 1200px;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
     padding: 0 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 
     @media screen and (max-Width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+        
     }
 
     @media screen and (max-Width: 768px) {
-        grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0;
     }
 `
 
 export const CardWrapper = styled.div`
-    background: #fff;
+    width: 350px;
+    height: 600px;
+    min-width: 350px;
+    margin: 0px 10px 0px 10px;
+    background: #FFF;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
     max-height: 450px;
@@ -178,4 +181,30 @@ export const NavLogo = styled(LinkR)`
         transform: scale(1.1); 
 
     }
+`
+
+export const ProjectsCardHr = styled.hr`
+    display: block;
+    width: 80%;
+    align-self: center;
+    border-top: 1px solid #A9A9A9;
+    margin: 100px auto;
+`
+
+export const ProjectsTypeLogo = styled.img`
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    width: 80px;
+    height: 80px;
+
+    @media screen and (max-width: 468px) {
+        display: none;
+    }
+`
+
+export const ProjectLogoWrap = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
 `
