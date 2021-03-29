@@ -1,8 +1,7 @@
 import React from 'react'
-import { Button } from '../ButtonElement';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap, Phone } from './InfoElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap, Phone, EmailA } from './InfoElements';
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, buttonLocation, number }) => {
+const ContactSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, buttonLocation, number }) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -15,17 +14,13 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <Phone darkText={darkText} href="tel:847-951-6388">{number}</Phone>
                                 <BtnWrap>
-                                    <Button to={buttonLocation}
-                                    smooth={true} 
-                                    duration={500}                         
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
+                                    <EmailA href={buttonLocation}
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0} 
                                     >
-                                    {buttonLabel}</Button>
+                                    {buttonLabel}
+                                    </EmailA>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
@@ -41,4 +36,4 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
     )
 }
 
-export default InfoSection
+export default ContactSection

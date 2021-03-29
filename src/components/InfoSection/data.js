@@ -46,7 +46,7 @@ export const homeObjThree = {
     lightTextDesc: false,
     topLine: "Contact",
     headline: "Feel free to reach out!",
-    description:'Phone',
+    number: '(847)-951-6388',
     buttonLabel: 'Email Me',
     imgStart: false,
     img: Icon2,

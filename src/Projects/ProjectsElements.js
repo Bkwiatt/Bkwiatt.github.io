@@ -4,6 +4,7 @@ import { Link as LinkR } from 'react-router-dom';
 export const ProjectsContainer = styled.div`
     background: #0c0c0c;
     height: 100%;
+    padding-bottom: 100px;
     z-index: 1;
 
     @media screen and (max-width: 768px) {
@@ -29,7 +30,7 @@ export const ProjectsWrapper = styled.div`
     display: flex;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 0 50px;
+    padding: 5px 50px;
     overflow-x: scroll;
     overflow-y: hidden;
 
@@ -39,6 +40,10 @@ export const ProjectsWrapper = styled.div`
 
     @media screen and (max-Width: 768px) {
         padding: 0;
+    }
+
+    &::-webkit-scrollbar {
+        border: 0px solid green;
     }
 `
 
@@ -55,9 +60,11 @@ export const CardWrapper = styled.div`
     max-height: 450px;
     box-shadow: 1px 1px 5px rgba(1,191,113,2);
     transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    border: 2px solid #01bf71;
 
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
         box-shadow: 3px 3px 5px rgba(1,191,113,2);
@@ -106,6 +113,7 @@ export const ProjectsP = styled.p`
 
 `
 
+//HR for card style 
 export const ProjectsHr = styled.hr`
     display: block;
     width: 100%;
@@ -115,6 +123,7 @@ export const ProjectsHr = styled.hr`
 `
 
 export const CardImgWrap = styled.div`
+    
 
 `
 
@@ -189,17 +198,25 @@ export const ProjectsCardHr = styled.hr`
     align-self: center;
     border-top: 1px solid #A9A9A9;
     margin: 100px auto;
+
+    @media screen and (max-width: 468px) {
+        margin-bottom: 150px;
+    }
 `
 
 export const ProjectsTypeLogo = styled.img`
-    position: absolute;
-    top: 25%;
-    left: 3%;
     width: 80px;
     height: 80px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: 10px;
 
     @media screen and (max-width: 468px) {
-        display: none;
+        top: 0;
+        margin-top: -75px;
+        width: 60px;
+        height: 60px;
     }
 `
 
