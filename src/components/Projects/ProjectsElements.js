@@ -225,3 +225,19 @@ export const ProjectLogoWrap = styled.div`
     width: 100%;
     height: 100%;
 `
+
+export const CardLink = styled(LinkR)`
+    text-decoration: none;
+    color: black;
+`
+
+export const ModalStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)'
+    }
+  };

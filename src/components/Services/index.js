@@ -28,7 +28,7 @@ const Services = () => {
                         <ServicesP>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla, nibh at commodo facilisis</ServicesP>
                     </ServicesCard>
                 </ServicesWrapper>
-                <ProjectRoute to='/projectspage'>See More</ProjectRoute>
+                <ProjectRoute to='/projects'>See More</ProjectRoute>
             </ServicesContainer>
         </>
     )
