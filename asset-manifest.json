@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.53fb8bc4.chunk.css",
-    "main.js": "/static/js/main.1790db86.chunk.js",
-    "main.js.map": "/static/js/main.1790db86.chunk.js.map",
+    "main.js": "/static/js/main.4c50f08e.chunk.js",
+    "main.js.map": "/static/js/main.4c50f08e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2cb2a5b.js",
     "runtime-main.js.map": "/static/js/runtime-main.d2cb2a5b.js.map",
     "static/css/2.86fbdad3.chunk.css": "/static/css/2.86fbdad3.chunk.css",
-    "static/js/2.ed5ea2ab.chunk.js": "/static/js/2.ed5ea2ab.chunk.js",
-    "static/js/2.ed5ea2ab.chunk.js.map": "/static/js/2.ed5ea2ab.chunk.js.map",
+    "static/js/2.1683d765.chunk.js": "/static/js/2.1683d765.chunk.js",
+    "static/js/2.1683d765.chunk.js.map": "/static/js/2.1683d765.chunk.js.map",
     "static/js/3.a928b3fc.chunk.js": "/static/js/3.a928b3fc.chunk.js",
     "static/js/3.a928b3fc.chunk.js.map": "/static/js/3.a928b3fc.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.86fbdad3.chunk.css.map": "/static/css/2.86fbdad3.chunk.css.map",
     "static/css/main.53fb8bc4.chunk.css.map": "/static/css/main.53fb8bc4.chunk.css.map",
-    "static/js/2.ed5ea2ab.chunk.js.LICENSE.txt": "/static/js/2.ed5ea2ab.chunk.js.LICENSE.txt",
+    "static/js/2.1683d765.chunk.js.LICENSE.txt": "/static/js/2.1683d765.chunk.js.LICENSE.txt",
     "static/media/avatar1.e5117e8e.jpg": "/static/media/avatar1.e5117e8e.jpg",
     "static/media/c.7f58ab59.png": "/static/media/c.7f58ab59.png",
-    "static/media/codingimg.9388447f.jpeg": "/static/media/codingimg.9388447f.jpeg",
+    "static/media/ios-avocado.2016ca7b.jpeg": "/static/media/ios-avocado.2016ca7b.jpeg",
+    "static/media/ios-fructus.2305035a.png": "/static/media/ios-fructus.2305035a.png",
+    "static/media/iphone1.169c5f8e.jpeg": "/static/media/iphone1.169c5f8e.jpeg",
+    "static/media/iphone2.3f86786a.jpeg": "/static/media/iphone2.3f86786a.jpeg",
     "static/media/svg-1.5086fa97.svg": "/static/media/svg-1.5086fa97.svg",
     "static/media/svg-2.ae5cd738.svg": "/static/media/svg-2.ae5cd738.svg",
     "static/media/svg-3.f3b7ac0b.svg": "/static/media/svg-3.f3b7ac0b.svg",
@@ -25,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.d2cb2a5b.js",
     "static/css/2.86fbdad3.chunk.css",
-    "static/js/2.ed5ea2ab.chunk.js",
+    "static/js/2.1683d765.chunk.js",
     "static/css/main.53fb8bc4.chunk.css",
-    "static/js/main.1790db86.chunk.js"
+    "static/js/main.4c50f08e.chunk.js"
   ]
 }
