@@ -129,6 +129,7 @@ export const CardImgWrap = styled.div`
 
 export const CardImg = styled.img`
     width: 100%;
+    max-height: 225px;
     height:100%;
 `
 
@@ -209,6 +210,7 @@ export const ProjectsTypeLogo = styled.img`
     height: 80px;
     position: absolute;
     top: 50%;
+    left: 5%;
     margin-top: -40px;
     margin-left: 10px;
 
@@ -231,13 +233,90 @@ export const CardLink = styled(LinkR)`
     color: black;
 `
 
+
+// Modal Styling
+//////////////////////////////////////////////////////////////////////////////////////////////////
 export const ModalStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)'
+    content: {
+        top: '50%',
+        left: '50%',
+        height: '90%',
+        width: '40%',
+        borderRadius: '10px',
+        backgroundColor: '#878787',
+        border: '3px solid #01bf71',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)'
     }
-  };
+};
+
+export const ModalHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  `
+
+export const ModalSocial = styled.a`
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+
+    &:hover {
+        color: red;
+        transform: scale(1.1);
+    }
+`
+
+export const ModalCloseButton = styled.button`
+    color: white;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+
+    &:hover {
+        color: red;
+        transform: scale(1.1);
+    }
+  `
+
+
+export const ModalH1 = styled.h1`
+    font-size: 3.5em;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+`
+
+export const ModalImgWrap = styled.div`
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+`
+
+export const ModalImg = styled.img`
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+    padding-left: 0;
+    border-radius: 30px;
+`
+
+export const ModalP = styled.p`
+    margin-top: 15px;
+    font-size: 1.1em;
+`
+
+export const ModalHr = styled.hr`
+    display: block;
+    width: 80%;
+    border-top: 1px solid #A9A9A9;
+`
