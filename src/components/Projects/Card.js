@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
-import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList, ModalImgWrapSmall } from './ProjectsElements'
+import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo } from './ProjectsElements'
 import iphone1 from '../../images/iphone1.jpeg'
 import iphone2 from '../../images/iphone2.jpeg'
+import appleLogo from '../../images/apple_logo_black.svg'
+import cLogo from '../../images/c.png'
+
 import { FaGithub } from 'react-icons/fa'
 import Modal from 'react-modal'
 import './modalStyles.css'
@@ -23,6 +26,9 @@ const Card = ({ projectName, description, githubLink, img }) => {
         <>
             <CardWrapper onClick={openModal}>
                 <CardImgWrap>
+                    <CardCategory>
+                        <ProjectsTypeLogo src={appleLogo} alt="ioslogo" />
+                    </CardCategory>
                     <CardImg src={img} alt="Card Image" />
                 </CardImgWrap>
                 <ProjectsHr />
@@ -30,6 +36,7 @@ const Card = ({ projectName, description, githubLink, img }) => {
                     <ProjectsH1>{projectName}</ProjectsH1>
                     <ProjectsP>{description}</ProjectsP>
                 </CardInfo>
+                
             </CardWrapper>
 
 

@@ -66,6 +66,14 @@ export const CardWrapper = styled.div`
         box-shadow: 3px 3px 5px rgba(1,191,113,2);
     } 
 
+    @media screen and (max-width: 350px) {
+        min-width: 300px;
+    }
+
+`
+
+export const CardCategory = styled.div`
+
 `
 
 export const ProjectRoute = styled(LinkR)`
@@ -119,7 +127,7 @@ export const ProjectsHr = styled.hr`
 `
 
 export const CardImgWrap = styled.div`
-    
+    position: relative;
 
 `
 
@@ -202,20 +210,11 @@ export const ProjectsCardHr = styled.hr`
 `
 
 export const ProjectsTypeLogo = styled.img`
-    width: 80px;
-    height: 80px;
     position: absolute;
-    top: 50%;
-    left: 5%;
-    margin-top: -40px;
-    margin-left: 10px;
-
-    @media screen and (max-width: 468px) {
-        top: 0;
-        margin-top: -75px;
-        width: 60px;
-        height: 60px;
-    }
+    z-index: 10;
+    width: 35px;
+    padding: 5px;
+    height: auto;
 `
 
 export const ProjectLogoWrap = styled.div`
@@ -253,6 +252,10 @@ export const ModalH4 = styled.h4`
     margin: 0;
     color: black;
     font-weight: bold;
+
+    @media screen and (max-width: 350px) {
+        font-size: 1.2rem;  
+    }
 `
 
 export const ModalCloseButton = styled.button`
@@ -281,7 +284,7 @@ export const ModalCloseButton = styled.button`
     @media screen and (max-width: 760px) {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 70% 30%;
     }
   `
 
@@ -314,6 +317,11 @@ export const ModalH1 = styled.h1`
 
     @media screen and (max-width: 760px) {
         font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 350px) {
+        font-size: 1.5rem;
         margin-top: 10px;
     }
 `
@@ -368,12 +376,35 @@ export const ModalImg = styled.img`
         padding: 10px 10px 10px 0;
         margin-top: 5px;
     }
+
+    @media screen and (max-width: 400px) {
+        max-width: 100px;
+        height: 200px;
+        padding: 10px 10px 10px 0;
+        margin-top: 5px;
+    }
+
+    @media screen and (max-width: 350px) {
+        max-width: 80px;
+        height: 180px;
+        padding: 10px 10px 10px 0;
+        margin-top: 5px;
+    }
+    
+    
     
 `
 
 export const ModalP = styled.p`
     margin-top: 15px;
     font-size: 1.1em;
+
+    @media screen and (max-width: 350px) {
+        font-size: 1rem;
+        line-height: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 `
 
 export const ModalHr = styled.hr`
@@ -384,6 +415,8 @@ export const ModalHr = styled.hr`
     @media screen and (max-width: 760px) {
         margin: 0;
     }
+
+    
 `
 
 export const SkillsList = styled.ul`
