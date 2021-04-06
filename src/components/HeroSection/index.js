@@ -11,11 +11,18 @@ const onHover = () => {
     setHover(!hover) 
 } 
 
+const playVideo = () => {
+    Video.play();
+}
+
 
     return (
-        <HeroContainer>
+        <HeroContainer onLoad={playVideo}>
+        
             <HeroBg>
-                <VideoBg autoPlay loop muted playsinline src={Video} type='/video/mp4' />
+                <VideoBg autoPlay loop muted playsinline>
+                    <source src={Video} />
+                </VideoBg>
             </HeroBg>
             <HeroContent>
                 <HeroH1>Brandon Kwiatkowski</HeroH1>
