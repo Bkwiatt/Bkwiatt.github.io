@@ -260,7 +260,6 @@ export const ModalSocial = styled.a`
     text-decoration: none;
     color: black;
     font-size: 2rem;
-
     &:hover {
         color: red;
         transform: scale(1.1);
@@ -280,7 +279,6 @@ export const ModalCloseButton = styled.button`
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-
     &:hover {
         color: red;
         transform: scale(1.1);
@@ -292,7 +290,6 @@ export const ModalH1 = styled.h1`
     font-size: 3.5em;
     margin-bottom: 5px;
     font-weight: bold;
-
 `
 
 export const ModalImgWrap = styled.div`

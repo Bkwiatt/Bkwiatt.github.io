@@ -1,23 +1,21 @@
-import React from 'react'
-import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalStyles, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr } from './ProjectsElements'
+import React, { useState } from 'react'
+import { CardWrapper, ModalStyles, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr } from './ProjectsElements'
 import iphone1 from '../../images/iphone1.jpeg'
 import iphone2 from '../../images/iphone2.jpeg'
 import { FaGithub } from 'react-icons/fa'
-
 import Modal from 'react-modal'
 
 const Card = ({ projectName, description, githubLink, img }) => {
-    Modal.setAppElement('#root')
+    const [modalIsOpen, setShowModal] = useState(false);
 
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-    function openModal() {
-        setIsOpen(true);
+    const openModal = () => {
+        setShowModal(prev => !prev)
     }
-
 
     function closeModal() {
-        setIsOpen(false);
+        setShowModal(false);
     }
+
     return (
         <>
             <CardWrapper onClick={openModal}>
@@ -32,12 +30,11 @@ const Card = ({ projectName, description, githubLink, img }) => {
             </CardWrapper>
 
 
-Í
             {/* On card click, Modal opens */}
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
-                style={ModalStyles} >
+                style={ModalStyles}>
 
                 <ModalHeader>
                     <ModalCloseButton onClick={closeModal}>x</ModalCloseButton>

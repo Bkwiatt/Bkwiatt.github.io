@@ -4,7 +4,7 @@ import ProjectCards from '../components/Projects/ProjectCards'
 import { ProjectsContainer } from '../components/Projects/ProjectsElements'
 
 const Projects = () => {
-    return (
+     return (
         <>
             <ProjectsContainer>
                 <ProjectPage />
