@@ -34,16 +34,12 @@ export const ProjectsWrapper = styled.div`
     overflow-x: scroll;
     overflow-y: hidden;
 
-    @media screen and (max-Width: 1000px) {
-        
-    }
-
     @media screen and (max-Width: 768px) {
         padding: 0;
     }
 
     &::-webkit-scrollbar {
-        border: 0px solid green;
+        display: none;
     }
 `
 
@@ -281,6 +277,12 @@ export const ModalCloseButton = styled.button`
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 760px) {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+    }
   `
 
 export const ModalLeft = styled.div`
@@ -312,6 +314,7 @@ export const ModalH1 = styled.h1`
 
     @media screen and (max-width: 760px) {
         font-size: 2rem;
+        margin-top: 10px;
     }
 `
 
@@ -324,6 +327,31 @@ export const ModalImgWrap = styled.div`
     margin: 0 auto;
     overflow-x: scroll;
     overflow-y: hidden;
+
+    @media screen and (max-width: 760px) {
+        display: none;
+    }
+`
+
+export const ModalImgWrapSmall = styled.div`
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+      
+
+    @media screen and (min-width: 760px) {
+        display: none;
+    }
 `
 
 export const ModalImg = styled.img`
@@ -336,6 +364,9 @@ export const ModalImg = styled.img`
 
     @media screen and (max-width: 760px) {
         max-width: 130px;
+        height: 250px;
+        padding: 10px 10px 10px 0;
+        margin-top: 5px;
     }
     
 `
@@ -349,6 +380,10 @@ export const ModalHr = styled.hr`
     display: block;
     width: 80%;
     border-top: 1px solid #A9A9A9;
+
+    @media screen and (max-width: 760px) {
+        margin: 0;
+    }
 `
 
 export const SkillsList = styled.ul`

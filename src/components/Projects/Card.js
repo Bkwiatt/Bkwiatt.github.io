@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList } from './ProjectsElements'
+import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList, ModalImgWrapSmall } from './ProjectsElements'
 import iphone1 from '../../images/iphone1.jpeg'
 import iphone2 from '../../images/iphone2.jpeg'
 import { FaGithub } from 'react-icons/fa'
@@ -54,6 +54,13 @@ const Card = ({ projectName, description, githubLink, img }) => {
                         <ModalHr />
                         <ModalP>{description}</ModalP>
                         <ModalHr />
+                        <ModalImgWrapSmall>
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                        </ModalImgWrapSmall>
                     </ModalLeft>
                     <ModalRight>               
                         <ModalImgWrap>
