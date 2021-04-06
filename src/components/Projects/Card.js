@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import { CardWrapper, ModalStyles, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr } from './ProjectsElements'
+import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList } from './ProjectsElements'
 import iphone1 from '../../images/iphone1.jpeg'
 import iphone2 from '../../images/iphone2.jpeg'
 import { FaGithub } from 'react-icons/fa'
 import Modal from 'react-modal'
+import './modalStyles.css'
 
 const Card = ({ projectName, description, githubLink, img }) => {
+    Modal.setAppElement('#root')
     const [modalIsOpen, setShowModal] = useState(false);
 
     const openModal = () => {
@@ -17,6 +19,7 @@ const Card = ({ projectName, description, githubLink, img }) => {
     }
 
     return (
+
         <>
             <CardWrapper onClick={openModal}>
                 <CardImgWrap>
@@ -32,26 +35,47 @@ const Card = ({ projectName, description, githubLink, img }) => {
 
             {/* On card click, Modal opens */}
             <Modal
+            
+                closeTimeoutMS={500}
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
-                style={ModalStyles}>
+                className='modalStyles'>
 
-                <ModalHeader>
-                    <ModalCloseButton onClick={closeModal}>x</ModalCloseButton>
+                <ModalContent>
+                    <ModalLeft>
+                        <ModalHeader>
+                            <ModalCloseButton onClick={closeModal}>x</ModalCloseButton>
+                            <ModalSocial href={githubLink} target="_blank" aria-label="Github">
+                                <FaGithub />
+                            </ModalSocial> 
+                        </ModalHeader>
+                        
+                        <ModalH1>{projectName}</ModalH1>
+                        <ModalHr />
+                        <ModalP>{description}</ModalP>
+                        <ModalHr />
+                    </ModalLeft>
+                    <ModalRight>               
+                        <ModalImgWrap>
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={iphone2} alt="iphone2" />
+                        </ModalImgWrap>
+                        <ModalHr style={{color: 'black'}} />
+                        <ModalH4>Skills Demonstrated</ModalH4>
+                        <ModalHr />
+                        <SkillsList>
+                            <SkillsItem>Swift</SkillsItem>
+                            <SkillsItem>SwiftUI</SkillsItem>
+                            <SkillsItem>UI/UX</SkillsItem>
+                            <SkillsItem>Object Oriented Programming</SkillsItem>
 
-                    <ModalSocial href={githubLink} target="_blank" aria-label="Github">
-                        <FaGithub />
-                    </ModalSocial>
-                    
-                </ModalHeader>
+                        </SkillsList>
+                    </ModalRight>
+                </ModalContent>
 
-                <ModalH1>{projectName}</ModalH1>
-                <ModalImgWrap>
-                    <ModalImg src={iphone1} alt="iphone1" />
-                    <ModalImg src={iphone2} alt="iphone2" />
-                </ModalImgWrap>
-                <ModalHr />
-                <ModalP>{description}</ModalP>
             </Modal>
         </>
     )

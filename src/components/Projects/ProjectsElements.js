@@ -236,20 +236,6 @@ export const CardLink = styled(LinkR)`
 
 // Modal Styling
 //////////////////////////////////////////////////////////////////////////////////////////////////
-export const ModalStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        height: '90%',
-        width: '40%',
-        borderRadius: '10px',
-        backgroundColor: '#878787',
-        border: '3px solid #01bf71',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
-    }
-};
-
 export const ModalHeader = styled.div`
     display: flex;
     justify-content: space-between;
@@ -257,13 +243,20 @@ export const ModalHeader = styled.div`
   `
 
 export const ModalSocial = styled.a`
+    text-align: right;
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-size: 2rem;
     &:hover {
         color: red;
-        transform: scale(1.1);
+        transform: scale(1.01);
     }
+`
+
+export const ModalH4 = styled.h4`
+    margin: 0;
+    color: black;
+    font-weight: bold;
 `
 
 export const ModalCloseButton = styled.button`
@@ -284,12 +277,42 @@ export const ModalCloseButton = styled.button`
         transform: scale(1.1);
     }
   `
+  export const ModalContent = styled.div`
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  `
+
+export const ModalLeft = styled.div`
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+`
+
+export const ModalRight = styled.div`
+    background-color: #fff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+`
 
 
 export const ModalH1 = styled.h1`
     font-size: 3.5em;
     margin-bottom: 5px;
     font-weight: bold;
+
+    @media screen and (max-width: 760px) {
+        font-size: 2rem;
+    }
 `
 
 export const ModalImgWrap = styled.div`
@@ -297,14 +320,24 @@ export const ModalImgWrap = styled.div`
     width: 100%;
     height: auto;
     border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
 `
 
 export const ModalImg = styled.img`
-    width: 250px;
-    height: 400px;
-    padding: 10px;
-    padding-left: 0;
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    padding: 0px 10px 10px 0px;
     border-radius: 30px;
+
+
+    @media screen and (max-width: 760px) {
+        max-width: 130px;
+    }
+    
 `
 
 export const ModalP = styled.p`
@@ -316,4 +349,15 @@ export const ModalHr = styled.hr`
     display: block;
     width: 80%;
     border-top: 1px solid #A9A9A9;
+`
+
+export const SkillsList = styled.ul`
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding-left: 10px;
+`
+
+export const SkillsItem = styled.li`
+    color: black;
 `
