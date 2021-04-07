@@ -10,10 +10,10 @@ const ProjectPage = () => {
                 <NavLogo to='/'>Bk</NavLogo>                    
                 <ProjectTypeMenu>
                     <NavItem>
-                        C#
+                        iOS
                     </NavItem>
                     <NavItem>
-                        iOS
+                        C#
                     </NavItem>
                     <NavItem>
                         SQL

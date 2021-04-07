@@ -77,6 +77,7 @@ export const ServicesH1 = styled.h1`
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
+    font-weight: bold;
 `
 
 export const ServicesP = styled.p`
@@ -102,6 +103,10 @@ export const ProjectRoute = styled(LinkR)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
+    }
+
+    @media screen and (max-width: 450px) {
+        margin-top: 20px;
     }
 `
 

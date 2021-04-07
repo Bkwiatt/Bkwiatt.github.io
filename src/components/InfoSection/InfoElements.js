@@ -51,6 +51,10 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 350px) {
+        padding-bottom: 30px;
+    }
 `
 
 
@@ -92,13 +96,20 @@ export const BtnWrap = styled.div`
 
 export const ImgWrap = styled.div`
     max-width: 555px;
-    height: 100%;
+    height: 100%; 
+    
 `
 
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    
+
+    @media screen and (max-width: 350px) {
+        width: 95%;
+        margin-left: 5%;
+    }
 `
 
 export const Phone = styled.a`

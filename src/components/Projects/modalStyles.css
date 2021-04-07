@@ -13,6 +13,48 @@
     overflow: hidden;
 }
 
+.ReactModal__Content {
+  opacity: 0;
+  transform: translateY(-40%);
+  transition: all 800ms ease-in-out;
+  -webkit-transform: translateY(-40%);
+  
+}
+
+.ReactModal__Content--after-open {
+  opacity: 1;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+}
+
+.ReactModal__Content--before-close {
+  opacity: 0;
+  transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
+
+}
+
+
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+
+
+
+/* Media Queries
+//////////////////////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 1050px) {
   .modalStyles {
       position: absolute;
@@ -27,6 +69,7 @@
       border: 3px solid #01bf71;
       outline: none;
       padding: 0px;
+      
   }
 }
 
@@ -38,13 +81,17 @@
         width: 80%;
         height: 60%;
         margin-left: -40%;
-        margin-top: -40%;
+        margin-top: -30%;
         border-radius: 10px;
         background-color: #000;
         border: 3px solid #01bf71;
         outline: none;
         padding: 0px;
+
+        
     }
+
+    
   }
 
   @media screen and (max-width: 450px) {
@@ -62,47 +109,10 @@
         outline: none;
         padding: 0px;
     }
+
+    .ReactModal__Content--after-open {
+      opacity: 1;
+      transform: translateY(10%);
+      -webkit-transform: translateY(10%);
+    }
   }
-
-  
-
-
-
-
-.ReactModal__Content {
-  opacity: 0;
-  transform: translateY(-40%);
-  transition: all 800ms ease-in-out;
-  -webkit-transform: translateY(-40%);
-  
-}
-
-.ReactModal__Content--after-open {
-  opacity: 1;
-  transform: translateY(0%);
-  -webkit-transform: translateY(0%);
-
-}
-
-.ReactModal__Content--before-close {
-  opacity: 0;
-  transform: translateY(-20%);
-  -webkit-transform: translateY(-20%);
-
-}
-
-
-
-
-.ReactModal__Overlay {
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open{
-  opacity: 1;
-}
-
-.ReactModal__Overlay--before-close{
-  opacity: 0;
-}

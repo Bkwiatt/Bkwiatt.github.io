@@ -10,7 +10,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: "About Me",
     headline: "24 years young",
-    description: "I'm a huge fan of all things technology! I love sports, especially baseball. I'm from the Chicagoland area so I'm a big Cubs fan. You can find me spending my free time at the gym, playing Warzone or hanging out by a body of water.",
+    description: "I'm a huge fan of all things technology! I love sports, especially baseball. I'm from the Chicagoland area so I'm a big Cubs fan. I'm into fitness, video games, food/cooking and all things technology.",
     buttonLabel: 'Lets go',
     imgStart: false,
     img: Icon1,
