@@ -135,6 +135,7 @@ export const CardImg = styled.img`
     width: 100%;
     max-height: 225px;
     height:100%;
+    z-index: -1;
 `
 
 export const CardInfo = styled.div`
@@ -211,7 +212,7 @@ export const ProjectsCardHr = styled.hr`
 
 export const ProjectsTypeLogo = styled.img`
     position: absolute;
-    z-index: 10;
+    z-index: 0;
     width: 35px;
     padding: 5px;
     height: auto;
@@ -307,6 +308,13 @@ export const ModalRight = styled.div`
     height: 100%;
     width: 100%;
     padding: 10px;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+
+    &:ModalHr {
+        width: 100%;
+    }
 `
 
 
@@ -378,8 +386,8 @@ export const ModalImg = styled.img`
     }
 
     @media screen and (max-width: 400px) {
-        max-width: 100px;
-        height: 200px;
+        max-width: 140px;
+        height: 270px;
         padding: 10px 10px 10px 0;
         margin-top: 5px;
     }
@@ -412,18 +420,28 @@ export const ModalHr = styled.hr`
     width: 80%;
     border-top: 1px solid #A9A9A9;
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
         margin: 0;
     }
+`
 
-    
+export const ModalHrSmall = styled.hr`
+    display: block;
+    width: 80%;
+    border-top: 1px solid #A9A9A9;
+    margin: 5px auto;
+
+    @media screen and (max-width: 768px) {
+        
+    }
 `
 
 export const SkillsList = styled.ul`
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    padding-left: 10px;
+    margin: 0 auto;
+    padding-left: 20px;
 `
 
 export const SkillsItem = styled.li`

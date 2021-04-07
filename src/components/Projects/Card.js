@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo } from './ProjectsElements'
+import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo, ModalHrSmall } from './ProjectsElements'
 import iphone1 from '../../images/iphone1.jpeg'
 import iphone2 from '../../images/iphone2.jpeg'
 import appleLogo from '../../images/apple_logo_black.svg'
@@ -77,9 +77,9 @@ const Card = ({ projectName, description, githubLink, img }) => {
                             <ModalImg src={iphone2} alt="iphone2" />
                             <ModalImg src={iphone2} alt="iphone2" />
                         </ModalImgWrap>
-                        <ModalHr style={{color: 'black'}} />
+                        <ModalHrSmall style={{color: 'black'}} />
                         <ModalH4>Skills Demonstrated</ModalH4>
-                        <ModalHr />
+                        <ModalHrSmall />
                         <SkillsList>
                             <SkillsItem>Swift</SkillsItem>
                             <SkillsItem>SwiftUI</SkillsItem>
