@@ -154,15 +154,23 @@ export const ProjectTypeMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    margin:  0 auto;
-    padding: 25px;
-    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
     height: 100%;
+    cursor: pointer;
+
+
+    &.active {
+        border-bottom: 3px solid #01bf71;
+    }
 
     &:hover {
         color: #01bf71;
-        cursor: pointer;
-    }
+    } 
+    
 `
 
 export const MobileIcon = styled.div`

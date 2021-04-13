@@ -7,7 +7,7 @@ const ProjectCards = () => {
     return (
         <>
             {/* iOS Projects */}
-            <ProjectLogoWrap>
+            <ProjectLogoWrap id="ios">
                 <ProjectsWrapper>
                     <Card {...iOSCard1} />
                     <Card {...iOSCard2} />
@@ -35,7 +35,7 @@ const ProjectCards = () => {
             <ProjectsCardHr />
 
             {/* React Projects */}
-            <ProjectLogoWrap>
+            <ProjectLogoWrap id="react">
                 <ProjectsWrapper>
                     <Card {...reactCard1} />
                 </ProjectsWrapper>
