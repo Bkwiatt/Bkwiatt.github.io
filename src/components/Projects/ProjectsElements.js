@@ -36,6 +36,7 @@ export const ProjectsWrapper = styled.div`
 
     @media screen and (max-Width: 768px) {
         padding: 0;
+        margin-left: 2px;
     }
 
     &::-webkit-scrollbar {
@@ -262,8 +263,8 @@ export const ModalH4 = styled.h4`
     color: black;
     font-weight: bold;
 
-    @media screen and (max-width: 350px) {
-        font-size: 1.2rem;  
+    @media screen and (max-width: 400px) {
+        font-size: 1.5rem;  
     }
 `
 
@@ -322,6 +323,10 @@ export const ModalRight = styled.div`
 
     &:ModalHr {
         width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding-top: 0;
     }
 `
 
@@ -394,8 +399,8 @@ export const ModalImg = styled.img`
     }
 
     @media screen and (max-width: 400px) {
-        max-width: 140px;
-        height: 270px;
+        max-width: 150px;
+        height: 180px;
         padding: 10px 10px 10px 0;
         margin-top: 5px;
     }
@@ -445,13 +450,18 @@ export const ModalHrSmall = styled.hr`
 `
 
 export const SkillsList = styled.ul`
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    max-width: 80%;
     margin: 0 auto;
     padding-left: 20px;
+    padding-top: 15px;
 `
 
 export const SkillsItem = styled.li`
     color: black;
+`
+
+export const ProgressContainer = styled.div`
+    height: auto;
+    max-width: auto;
+    overflow: scroll;
 `

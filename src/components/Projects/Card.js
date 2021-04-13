@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, SkillsItem, SkillsList, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo, ModalHrSmall } from './ProjectsElements'
+import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo, ModalHrSmall, ProgressContainer } from './ProjectsElements'
 import iphone2 from '../../images/iphone2.jpeg'
-
+import ProgressBar from '../ProgressBar'
 import { FaGithub } from 'react-icons/fa'
 import Modal from 'react-modal'
 import './modalStyles.css'
@@ -19,6 +19,7 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img }) =>
     }
 
     return (
+        
 
         <>
             <CardWrapper onClick={openModal}>
@@ -77,13 +78,14 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img }) =>
                         <ModalHrSmall style={{color: 'black'}} />
                         <ModalH4>Skills Demonstrated</ModalH4>
                         <ModalHrSmall />
-                        <SkillsList>
-                            <SkillsItem>Swift</SkillsItem>
-                            <SkillsItem>SwiftUI</SkillsItem>
-                            <SkillsItem>UI/UX</SkillsItem>
-                            <SkillsItem>Object Oriented Programming</SkillsItem>
-
-                        </SkillsList>
+                        <ProgressContainer>
+                            <ProgressBar />
+                            <ProgressBar />
+                            <ProgressBar />
+                            <ProgressBar />
+                            <ProgressBar />
+                            <ProgressBar />
+                        </ProgressContainer>
                     </ModalRight>
                 </ModalContent>
 
