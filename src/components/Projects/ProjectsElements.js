@@ -34,7 +34,12 @@ export const ProjectsWrapper = styled.div`
     overflow-x: scroll;
     overflow-y: hidden;
 
-    @media screen and (max-Width: 768px) {
+    @media screen and (max-Width: 450px) {
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-Width: 400px) {
         padding: 0;
         margin-left: 2px;
     }
@@ -398,16 +403,23 @@ export const ModalImg = styled.img`
         margin-top: 5px;
     }
 
+    @media screen and (max-width: 450px) {
+        max-width: 120px;
+        height: 200px;
+        padding: 10px 10px 10px 0;
+        margin-top: 5px;
+    }
+
     @media screen and (max-width: 400px) {
-        max-width: 150px;
-        height: 180px;
+        max-width: 90px;
+        height: 150px;
         padding: 10px 10px 10px 0;
         margin-top: 5px;
     }
 
     @media screen and (max-width: 350px) {
-        max-width: 80px;
-        height: 180px;
+        max-width: 70px;
+        height: 110px;
         padding: 10px 10px 10px 0;
         margin-top: 5px;
     }
@@ -419,8 +431,8 @@ export const ModalImg = styled.img`
 export const ModalP = styled.p`
     margin-top: 15px;
     font-size: 1.1em;
-
-    @media screen and (max-width: 350px) {
+    
+    @media screen and (max-width: 450px) {
         font-size: 1rem;
         line-height: 18px;
         margin-top: 5px;

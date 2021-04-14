@@ -6,7 +6,9 @@ import { FaGithub } from 'react-icons/fa'
 import Modal from 'react-modal'
 import './modalStyles.css'
 
-const Card = ({ projectName, projectTypeLogo, description, githubLink, img }) => {
+
+
+const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skill }) => {
     Modal.setAppElement('#root')
     const [modalIsOpen, setShowModal] = useState(false);
 
@@ -85,6 +87,7 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img }) =>
                             <ProgressBar />
                             <ProgressBar />
                             <ProgressBar />
+                            
                         </ProgressContainer>
                     </ModalRight>
                 </ModalContent>

@@ -19,8 +19,10 @@ export const iOSCard1 = {
     projectName: 'iOS Fructus App',
     projectTypeLogo: appleLogo,
     description: 'iOS project created around different fruits with the intention of learning beautiful UI design and best practices using Swift',
-    githubLink: "//www.github.com/Bkwiatt/Fructus-iOS-App"
+    githubLink: "//www.github.com/Bkwiatt/Fructus-iOS-App",
+    skill: cLogo
 }
+
 
 export const iOSCard2 = {
     img: iosimg2,

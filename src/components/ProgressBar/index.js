@@ -1,12 +1,13 @@
 import React from 'react'
-import img1 from '../../images/c.png'
 import { PWrapper, ContentContainer, SkillLogo, ProgressController } from './ProjectBarElements'
+import img1 from '../../images/c.png'
 
-const ProgressBar = () => {
+const ProgressBar =  () => {
+
     return (
         <>
             <ContentContainer>
-                <SkillLogo src={img1} alt="apple" />
+                <SkillLogo  src={img1} />
                 <PWrapper>
                     <ProgressController />
                 </PWrapper>
