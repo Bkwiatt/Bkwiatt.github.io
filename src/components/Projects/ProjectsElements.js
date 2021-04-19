@@ -291,7 +291,7 @@ export const ModalCloseButton = styled.button`
         transform: scale(1.1);
     }
   `
-  export const ModalContent = styled.div`
+export const ModalContent = styled.div`
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -362,6 +362,7 @@ export const ModalImgWrap = styled.div`
     overflow-x: scroll;
     overflow-y: hidden;
 
+
     @media screen and (max-width: 760px) {
         display: none;
     }
@@ -394,6 +395,7 @@ export const ModalImg = styled.img`
     height: 300px;
     padding: 0px 10px 10px 0px;
     border-radius: 30px;
+    cursor: pointer;
 
 
     @media screen and (max-width: 760px) {

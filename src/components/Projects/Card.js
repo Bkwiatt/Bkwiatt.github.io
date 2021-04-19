@@ -8,7 +8,7 @@ import './modalStyles.css'
 
 
 
-const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skill }) => {
+const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skill, img1, img2, img3, img4, img5 }) => {
     Modal.setAppElement('#root')
     const [modalIsOpen, setShowModal] = useState(false);
 
@@ -62,20 +62,20 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skil
                         <ModalP>{description}</ModalP>
                         <ModalHr />
                         <ModalImgWrapSmall>
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={img1} alt="iphone2" />
+                            <ModalImg src={img2} alt="iphone2" />
+                            <ModalImg src={img3} alt="iphone2" />
+                            <ModalImg src={img4} alt="iphone2" />
+                            <ModalImg src={img5} alt="iphone2" />
                         </ModalImgWrapSmall>
                     </ModalLeft>
                     <ModalRight>               
                         <ModalImgWrap>
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
-                            <ModalImg src={iphone2} alt="iphone2" />
+                            <ModalImg src={img1} alt="iphone2" />
+                            <ModalImg src={img2} alt="iphone2" />
+                            <ModalImg src={img3} alt="iphone2" />
+                            <ModalImg src={img4} alt="iphone2" />
+                            <ModalImg src={img5} alt="iphone2" />
                         </ModalImgWrap>
                         <ModalHrSmall style={{color: 'black'}} />
                         <ModalH4>Skills Demonstrated</ModalH4>

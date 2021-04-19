@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProjectsCardHr, ProjectsWrapper, ProjectLogoWrap } from './ProjectsElements'
 import Card from './Card'
-import { iOSCard1, iOSCard2, cSharpCard1, sqlCard1, reactCard1 } from './data'
+import { iOSCard1, iOSCard2, cSharpCard1, sqlCard1, reactCard1, htmlCard1 } from './data'
 
 const ProjectCards = () => {
     return (
@@ -34,10 +34,11 @@ const ProjectCards = () => {
 
             <ProjectsCardHr />
 
-            {/* React Projects */}
-            <ProjectLogoWrap id="react">
+            {/* Web Dev Projects */}
+            <ProjectLogoWrap id="webapp">
                 <ProjectsWrapper>
                     <Card {...reactCard1} />
+                    <Card {...htmlCard1} />
                 </ProjectsWrapper>
             </ProjectLogoWrap>
             
