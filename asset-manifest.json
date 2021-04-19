@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.faf69abb.chunk.css",
-    "main.js": "/static/js/main.933e2412.chunk.js",
-    "main.js.map": "/static/js/main.933e2412.chunk.js.map",
+    "main.js": "/static/js/main.894df986.chunk.js",
+    "main.js.map": "/static/js/main.894df986.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.025d69ca.js",
     "runtime-main.js.map": "/static/js/runtime-main.025d69ca.js.map",
     "static/css/2.86fbdad3.chunk.css": "/static/css/2.86fbdad3.chunk.css",
@@ -18,8 +18,19 @@
     "static/media/apple_logo_black.8fbc3843.svg": "/static/media/apple_logo_black.8fbc3843.svg",
     "static/media/avatar1.e5117e8e.jpg": "/static/media/avatar1.e5117e8e.jpg",
     "static/media/avocado.c4898f9e.png": "/static/media/avocado.c4898f9e.png",
+    "static/media/avocado1.9f4a505a.png": "/static/media/avocado1.9f4a505a.png",
+    "static/media/avocado2.1a982ed3.png": "/static/media/avocado2.1a982ed3.png",
+    "static/media/avocado3.3cd3af6f.png": "/static/media/avocado3.3cd3af6f.png",
+    "static/media/avocado4.32f35152.png": "/static/media/avocado4.32f35152.png",
+    "static/media/avocado5.80ccf219.png": "/static/media/avocado5.80ccf219.png",
     "static/media/booksCard.ad6058ff.png": "/static/media/booksCard.ad6058ff.png",
     "static/media/c.7f58ab59.png": "/static/media/c.7f58ab59.png",
+    "static/media/fructus1.48036a88.png": "/static/media/fructus1.48036a88.png",
+    "static/media/fructus2.0ba1bceb.png": "/static/media/fructus2.0ba1bceb.png",
+    "static/media/fructus3.72643da9.png": "/static/media/fructus3.72643da9.png",
+    "static/media/fructus4.f8558c81.png": "/static/media/fructus4.f8558c81.png",
+    "static/media/fructus5.ccf2a5bb.png": "/static/media/fructus5.ccf2a5bb.png",
+    "static/media/html.aa5995c7.png": "/static/media/html.aa5995c7.png",
     "static/media/ios-avocado.2016ca7b.jpeg": "/static/media/ios-avocado.2016ca7b.jpeg",
     "static/media/ios-fructus.2305035a.png": "/static/media/ios-fructus.2305035a.png",
     "static/media/iphone2.3f86786a.jpeg": "/static/media/iphone2.3f86786a.jpeg",
@@ -27,6 +38,7 @@
     "static/media/pirateLogo.71109af9.png": "/static/media/pirateLogo.71109af9.png",
     "static/media/reactBasicCard.c0e8ca45.png": "/static/media/reactBasicCard.c0e8ca45.png",
     "static/media/react_logo.73ac128a.png": "/static/media/react_logo.73ac128a.png",
+    "static/media/spaceCard.f308b12e.png": "/static/media/spaceCard.f308b12e.png",
     "static/media/svg-1.5086fa97.svg": "/static/media/svg-1.5086fa97.svg",
     "static/media/svg-2.ae5cd738.svg": "/static/media/svg-2.ae5cd738.svg",
     "static/media/svg-3.f3b7ac0b.svg": "/static/media/svg-3.f3b7ac0b.svg",
@@ -37,6 +49,6 @@
     "static/css/2.86fbdad3.chunk.css",
     "static/js/2.c44a4a78.chunk.js",
     "static/css/main.faf69abb.chunk.css",
-    "static/js/main.933e2412.chunk.js"
+    "static/js/main.894df986.chunk.js"
   ]
 }
