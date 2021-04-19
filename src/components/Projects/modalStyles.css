@@ -86,12 +86,8 @@
         background-color: #000;
         border: 3px solid #01bf71;
         outline: none;
-        padding: 0px;
-
-        
+        padding: 0px;   
     }
-
-    
   }
 
   @media screen and (max-width: 450px) {
@@ -100,7 +96,7 @@
         top: 50%;
         left: 50%;
         width: 80%;
-        height: 70%;
+        height: 520px;
         margin-left: -45;
         margin-top: -40%;
         border-radius: 10px;
@@ -108,6 +104,40 @@
         border: none;
         outline: none;
         padding: 0px;
+    }
+
+    @media screen and (max-width: 400px) {
+      .modalStyles {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 80%;
+          height: 480px;
+          margin-left: -40%;
+          margin-top: -30%;
+          border-radius: 10px;
+          background-color: #000;
+          border: 3px solid #01bf71;
+          outline: none;
+          padding: 0px;   
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+      .modalStyles {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 80%;
+          height: 440px;
+          margin-left: -40%;
+          margin-top: -30%;
+          border-radius: 10px;
+          background-color: #000;
+          border: 3px solid #01bf71;
+          outline: none;
+          padding: 0px;   
+      }
     }
 
     .ReactModal__Content--after-open {
