@@ -29,14 +29,15 @@ export const homeObjTwo = {
     topLine: "Skills",
     headline: "Full Stack Developer",
     description: "I'm a developer capable of working on both the front and backend of a project. I carry a wide variety of skills and am always looking to learn more! Click the button below to view my skills.",
-    buttonLabel: 'My Skills',
+    buttonLabel: 'v',
     imgStart: true,
     img: Icon3,
     alt: 'Car',
     dark: false,
     primary: false,
     darkText: true,
-    buttonLocation: 'projects'
+    buttonLocation: 'projects',
+    imgVal: 1
 }
 
 export const homeObjThree = {

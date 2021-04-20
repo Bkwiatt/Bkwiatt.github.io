@@ -143,3 +143,42 @@ export const EmailA = styled.a`
         background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
     }
 `
+
+
+//Modal styles
+////////////////////////////////////////////////////////////////////////////////
+
+export const ModalButton = styled.button`
+    border-radius: 50px;
+    background: ${({primary}) => (primary ? '#01BF71' : '#010606')};
+
+    white-space:nowrap;
+    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    color: ${({dark}) => (dark ? '#010606' : '#fff')};
+    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
+    }
+`
+
+export const ModalHeader = styled.h1`
+    color: #01bf71;
+    margin: 2px 10px;
+`
+
+export const ModalWrapper = styled.div`
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 30px;
+`

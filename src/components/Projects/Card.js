@@ -7,7 +7,6 @@ import Modal from 'react-modal'
 import './modalStyles.css'
 
 
-
 const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skill, img1, img2, img3, img4, img5 }) => {
     Modal.setAppElement('#root')
     const [modalIsOpen, setShowModal] = useState(false);
@@ -19,6 +18,7 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skil
     function closeModal() {
         setShowModal(false);
     }
+
 
     return (
         
