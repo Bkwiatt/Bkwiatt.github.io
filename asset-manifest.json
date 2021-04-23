@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.faf69abb.chunk.css",
-    "main.js": "/static/js/main.d78a3f35.chunk.js",
-    "main.js.map": "/static/js/main.d78a3f35.chunk.js.map",
+    "main.js": "/static/js/main.2ed03e62.chunk.js",
+    "main.js.map": "/static/js/main.2ed03e62.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7e26066c.js",
     "runtime-main.js.map": "/static/js/runtime-main.7e26066c.js.map",
     "static/css/2.86fbdad3.chunk.css": "/static/css/2.86fbdad3.chunk.css",
@@ -18,18 +18,18 @@
     "static/media/apple_logo_black.8fbc3843.svg": "/static/media/apple_logo_black.8fbc3843.svg",
     "static/media/avatar1.e5117e8e.jpg": "/static/media/avatar1.e5117e8e.jpg",
     "static/media/avocado.c4898f9e.png": "/static/media/avocado.c4898f9e.png",
-    "static/media/avocado1.9f4a505a.png": "/static/media/avocado1.9f4a505a.png",
-    "static/media/avocado2.1a982ed3.png": "/static/media/avocado2.1a982ed3.png",
-    "static/media/avocado3.3cd3af6f.png": "/static/media/avocado3.3cd3af6f.png",
-    "static/media/avocado4.32f35152.png": "/static/media/avocado4.32f35152.png",
-    "static/media/avocado5.80ccf219.png": "/static/media/avocado5.80ccf219.png",
+    "static/media/avocado1.55d55882.png": "/static/media/avocado1.55d55882.png",
+    "static/media/avocado2.aeb8988b.png": "/static/media/avocado2.aeb8988b.png",
+    "static/media/avocado3.0b12b775.png": "/static/media/avocado3.0b12b775.png",
+    "static/media/avocado4.2ba6d0ce.png": "/static/media/avocado4.2ba6d0ce.png",
+    "static/media/avocado5.9ce9cab6.png": "/static/media/avocado5.9ce9cab6.png",
     "static/media/booksCard.ad6058ff.png": "/static/media/booksCard.ad6058ff.png",
     "static/media/c.7f58ab59.png": "/static/media/c.7f58ab59.png",
-    "static/media/fructus1.48036a88.png": "/static/media/fructus1.48036a88.png",
-    "static/media/fructus2.0ba1bceb.png": "/static/media/fructus2.0ba1bceb.png",
-    "static/media/fructus3.72643da9.png": "/static/media/fructus3.72643da9.png",
-    "static/media/fructus4.f8558c81.png": "/static/media/fructus4.f8558c81.png",
-    "static/media/fructus5.ccf2a5bb.png": "/static/media/fructus5.ccf2a5bb.png",
+    "static/media/fructus1.e1d7e388.png": "/static/media/fructus1.e1d7e388.png",
+    "static/media/fructus2.f949ec26.png": "/static/media/fructus2.f949ec26.png",
+    "static/media/fructus3.798a8f04.png": "/static/media/fructus3.798a8f04.png",
+    "static/media/fructus4.79f5d285.png": "/static/media/fructus4.79f5d285.png",
+    "static/media/fructus5.d116b09a.png": "/static/media/fructus5.d116b09a.png",
     "static/media/html.aa5995c7.png": "/static/media/html.aa5995c7.png",
     "static/media/ios-avocado.2016ca7b.jpeg": "/static/media/ios-avocado.2016ca7b.jpeg",
     "static/media/ios-fructus.2305035a.png": "/static/media/ios-fructus.2305035a.png",
@@ -49,6 +49,6 @@
     "static/css/2.86fbdad3.chunk.css",
     "static/js/2.e84ff228.chunk.js",
     "static/css/main.faf69abb.chunk.css",
-    "static/js/main.d78a3f35.chunk.js"
+    "static/js/main.2ed03e62.chunk.js"
   ]
 }
