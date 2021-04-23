@@ -126,8 +126,12 @@ export const NavBtnLink = styled(LinkR)`
     }
 `
 
-export const MobileIcons = styled(LinkR)`
-    cursor: pointer;
-    color: red;
+export const TodoLink = styled(LinkR)`
+    transform: scale(1.1);
+    color: 'red';
+
+    @media screen and (max-Width: 768px) {
+        display: none;
+    }
 `
 

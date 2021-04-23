@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import TodoList from './TodoList';
 import { v4 as uuidv4 } from 'uuid';
-import { TodoWrap, TodoContainer, ActionButton, TodoAddContainer, TodoListContainer, TodoInputBox, TodoH1 } from './todoListElements.js'
+import { TodoWrap, TodoContainer, AddActionButton, ClearActionButton, TodoAddContainer, TodoListContainer, TodoInputBox, TodoH1, ClearDiv, CounterP } from './todoListElements.js'
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
@@ -54,17 +54,17 @@ function App() {
                     {/* Top container */}
                     <TodoAddContainer>
                         <TodoInputBox ref={todoNameRef} type="text" />
-                        <ActionButton onClick={handleAddTodo}>Add</ActionButton>
+                        <AddActionButton onClick={handleAddTodo}>Add</AddActionButton>
                     </TodoAddContainer>
 
                     {/* Bottom container */}
                     <TodoListContainer>
                         <TodoList todos={todos} toggleTodo={toggleTodo} />
                     </TodoListContainer>
-                    <div>
-                        {todos.filter(todo => !todo.complete).length} left todo
-                            <ActionButton onClick={handleClearTodos}>Clear</ActionButton>
-                    </div>
+                    <ClearDiv>
+                        <CounterP>{todos.filter(todo => !todo.complete).length} left todo </CounterP>
+                            <ClearActionButton onClick={handleClearTodos}>Clear</ClearActionButton>
+                    </ClearDiv>
 
 
                 </TodoContainer>

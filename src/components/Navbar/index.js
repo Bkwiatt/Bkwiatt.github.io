@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, MobileIcons } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, TodoLink } from './NavbarElements';
 import { IconContext } from 'react-icons/lib';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineExclamationCircle } from "react-icons/ai"
@@ -27,7 +27,6 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
-            <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to='/' onClick={toggleHome}>Bk</NavLogo>
@@ -60,12 +59,12 @@ const Navbar = ({ toggle }) => {
                             <NavBtnLink to="/resume">Résumé</NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
-                    <MobileIcons to="/todo">
-                        <AiOutlineExclamationCircle />
-                    </MobileIcons>
-                    
+                    <IconContext.Provider value={{ color: 'red' }}>
+                        <TodoLink to="/todo">
+                            <AiOutlineExclamationCircle />
+                        </TodoLink>
+                    </IconContext.Provider>
                 </Nav>
-            </IconContext.Provider>
         </>
     )
 }

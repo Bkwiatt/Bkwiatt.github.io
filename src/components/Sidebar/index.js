@@ -1,5 +1,6 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap } from './SidebarElements'; 
+import { AiOutlineExclamationCircle } from "react-icons/ai"
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, SidebarRouteLi } from './SidebarElements'; 
 
 const Sidebar = ( {isOpen, toggle} ) => {
     return (
@@ -21,6 +22,7 @@ const Sidebar = ( {isOpen, toggle} ) => {
                     <SidebarLink to="contact" onClick={toggle}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                     >Contact</SidebarLink>
+                    <SidebarRouteLi to="/todo" onClick={toggle}><AiOutlineExclamationCircle /></SidebarRouteLi>
                 </SidebarMenu>
             </SidebarWrapper>
             <SideBtnWrap>
