@@ -16,7 +16,7 @@ export const TodoContainer = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -75%);
     padding: 15px;
     border-radius: 10px;
     background-color: none;
