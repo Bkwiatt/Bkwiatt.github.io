@@ -126,3 +126,8 @@ export const NavBtnLink = styled(LinkR)`
     }
 `
 
+export const MobileIcons = styled(LinkR)`
+    cursor: pointer;
+    color: red;
+`
+

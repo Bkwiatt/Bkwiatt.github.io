@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, MobileIcons } from './NavbarElements';
 import { IconContext } from 'react-icons/lib';
 import { FaBars } from 'react-icons/fa';
+import { AiOutlineExclamationCircle } from "react-icons/ai"
 import {animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
@@ -22,6 +23,7 @@ const Navbar = ({ toggle }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     };
+
 
     return (
         <>
@@ -57,8 +59,11 @@ const Navbar = ({ toggle }) => {
                         <NavBtn>
                             <NavBtnLink to="/resume">Résumé</NavBtnLink>
                         </NavBtn>
-
                     </NavbarContainer>
+                    <MobileIcons to="/todo">
+                        <AiOutlineExclamationCircle />
+                    </MobileIcons>
+                    
                 </Nav>
             </IconContext.Provider>
         </>

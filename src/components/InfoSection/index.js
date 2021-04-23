@@ -18,7 +18,7 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
         setShowModal(false);
     }
 
-    if (imgVal == 1) {
+    if (imgVal === 1) {
         button = <ModalButton onClick={openModal}>Skills</ModalButton>
     }
     else { button = null }
