@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.faf69abb.chunk.css",
-    "main.js": "/static/js/main.2ed03e62.chunk.js",
-    "main.js.map": "/static/js/main.2ed03e62.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7e26066c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7e26066c.js.map",
+    "main.css": "/static/css/main.eef370b2.chunk.css",
+    "main.js": "/static/js/main.cda3275b.chunk.js",
+    "main.js.map": "/static/js/main.cda3275b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eb808dac.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eb808dac.js.map",
     "static/css/2.86fbdad3.chunk.css": "/static/css/2.86fbdad3.chunk.css",
-    "static/js/2.e84ff228.chunk.js": "/static/js/2.e84ff228.chunk.js",
-    "static/js/2.e84ff228.chunk.js.map": "/static/js/2.e84ff228.chunk.js.map",
-    "static/js/3.3489e9bf.chunk.js": "/static/js/3.3489e9bf.chunk.js",
-    "static/js/3.3489e9bf.chunk.js.map": "/static/js/3.3489e9bf.chunk.js.map",
+    "static/js/2.79266488.chunk.js": "/static/js/2.79266488.chunk.js",
+    "static/js/2.79266488.chunk.js.map": "/static/js/2.79266488.chunk.js.map",
+    "static/js/3.379bf51d.chunk.js": "/static/js/3.379bf51d.chunk.js",
+    "static/js/3.379bf51d.chunk.js.map": "/static/js/3.379bf51d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.86fbdad3.chunk.css.map": "/static/css/2.86fbdad3.chunk.css.map",
-    "static/css/main.faf69abb.chunk.css.map": "/static/css/main.faf69abb.chunk.css.map",
-    "static/js/2.e84ff228.chunk.js.LICENSE.txt": "/static/js/2.e84ff228.chunk.js.LICENSE.txt",
+    "static/css/main.eef370b2.chunk.css.map": "/static/css/main.eef370b2.chunk.css.map",
+    "static/js/2.79266488.chunk.js.LICENSE.txt": "/static/js/2.79266488.chunk.js.LICENSE.txt",
     "static/media/apple-rainbow.41339b73.png": "/static/media/apple-rainbow.41339b73.png",
     "static/media/apple_logo_black.8fbc3843.svg": "/static/media/apple_logo_black.8fbc3843.svg",
     "static/media/avatar1.e5117e8e.jpg": "/static/media/avatar1.e5117e8e.jpg",
@@ -33,7 +33,6 @@
     "static/media/html.aa5995c7.png": "/static/media/html.aa5995c7.png",
     "static/media/ios-avocado.2016ca7b.jpeg": "/static/media/ios-avocado.2016ca7b.jpeg",
     "static/media/ios-fructus.2305035a.png": "/static/media/ios-fructus.2305035a.png",
-    "static/media/iphone2.3f86786a.jpeg": "/static/media/iphone2.3f86786a.jpeg",
     "static/media/pirateGamesCard.6749d77d.png": "/static/media/pirateGamesCard.6749d77d.png",
     "static/media/pirateLogo.71109af9.png": "/static/media/pirateLogo.71109af9.png",
     "static/media/reactBasicCard.c0e8ca45.png": "/static/media/reactBasicCard.c0e8ca45.png",
@@ -45,10 +44,10 @@
     "static/media/video.7d1ea6a9.mp4": "/static/media/video.7d1ea6a9.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.7e26066c.js",
+    "static/js/runtime-main.eb808dac.js",
     "static/css/2.86fbdad3.chunk.css",
-    "static/js/2.e84ff228.chunk.js",
-    "static/css/main.faf69abb.chunk.css",
-    "static/js/main.2ed03e62.chunk.js"
+    "static/js/2.79266488.chunk.js",
+    "static/css/main.eef370b2.chunk.css",
+    "static/js/main.cda3275b.chunk.js"
   ]
 }
