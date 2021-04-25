@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo, ModalHrSmall, ProgressContainer } from './ProjectsElements'
-import iphone2 from '../../images/iphone2.jpeg'
 import ProgressBar from '../ProgressBar'
 import { FaGithub } from 'react-icons/fa'
 import Modal from 'react-modal'

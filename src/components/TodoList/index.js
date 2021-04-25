@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import TodoList from './TodoList';
 import { v4 as uuidv4 } from 'uuid';
-import { TodoWrap, TodoContainer, AddActionButton, ClearActionButton, TodoAddContainer, TodoListContainer, TodoInputBox, TodoH1, ClearDiv, CounterP } from './todoListElements.js'
+import { FaArrowLeft } from 'react-icons/fa'
+import { TodoWrap, TodoContainer, AddActionButton, ClearActionButton, TodoAddContainer, TodoListContainer, TodoInputBox, TodoH1, ClearDiv, CounterP, HomeButton } from './todoListElements.js'
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
@@ -49,11 +50,14 @@ function App() {
     return (
         <>
             <TodoWrap>
+                <HomeButton to='/'>
+                    <FaArrowLeft />
+                </HomeButton>
                 <TodoContainer>
                     <TodoH1>TO-DO LIST</TodoH1>
                     {/* Top container */}
                     <TodoAddContainer>
-                        <TodoInputBox ref={todoNameRef} type="text" />
+                        <TodoInputBox ref={todoNameRef} type="text" placeholder='new task' />
                         <AddActionButton onClick={handleAddTodo}>Add</AddActionButton>
                     </TodoAddContainer>
 
@@ -63,7 +67,7 @@ function App() {
                     </TodoListContainer>
                     <ClearDiv>
                         <CounterP>{todos.filter(todo => !todo.complete).length} left todo </CounterP>
-                            <ClearActionButton onClick={handleClearTodos}>Clear</ClearActionButton>
+                        <ClearActionButton onClick={handleClearTodos}>Clear</ClearActionButton>
                     </ClearDiv>
 
 

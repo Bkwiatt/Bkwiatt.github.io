@@ -5,6 +5,7 @@ import Home from './pages';
 import ResumePage from './pages/resume';
 import ProjectsPage from './pages/projects'
 import TodoListPage from './pages/todo'
+import warzonestatsPage from './pages/warzonestats'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/resume" component={ResumePage} exact />
         <Route path="/projects" component={ProjectsPage} exact />
         <Route path="/todo" component={TodoListPage} exact />
+        <Route path="/warzonestats" component={warzonestatsPage} exact />
       </HashRouter>   
     </Router>
   )

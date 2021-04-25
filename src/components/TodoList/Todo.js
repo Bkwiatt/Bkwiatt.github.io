@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { propTypes } from 'react-bootstrap/esm/Image'
+import React from 'react'
 import { TodoInput, TodoItemContainer, TodoHr, LabelStyle } from './todoListElements'
 
 export default function Todo({ todo, toggleTodo }) {

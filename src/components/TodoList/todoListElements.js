@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link as LinkR } from 'react-router-dom'
 
 export const TodoWrap = styled.div`
     width: 100%;
@@ -85,6 +86,11 @@ export const TodoInputBox = styled.input`
     border:none;
     width: 80%;
     font-size: 20px;
+    font-weight: bold;
+    
+    &:focus {
+        outline: none;
+    }
 `
 
 export const TodoHr = styled.hr`
@@ -127,5 +133,32 @@ export const LabelStyle = styled.label`
     font-weight: bold;
     word-wrap: break-word;
     color: ${props => props.todo ? "red" : "black"};
-    text-decoration: ${props => props.todo ? "line-through" : "none"}
+    text-decoration: ${props => props.todo ? "line-through" : "none"};
 `
+
+export const HomeButton = styled(LinkR)`
+    background-color: transparent;
+    display: inline-block;
+    border: 2px solid #01bf71;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+
+    &:hover {
+        font-size: 1.5rem;
+        border: 2px solid red;
+    }
+
+    @media screen and (max-Width: 450px) {
+        display: none;
+    }
+`
+
+   
