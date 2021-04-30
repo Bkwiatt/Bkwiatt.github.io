@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.eef370b2.chunk.css",
-    "main.js": "/static/js/main.cda3275b.chunk.js",
-    "main.js.map": "/static/js/main.cda3275b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.eb808dac.js",
-    "runtime-main.js.map": "/static/js/runtime-main.eb808dac.js.map",
+    "main.css": "/static/css/main.4dfb3fd2.chunk.css",
+    "main.js": "/static/js/main.5468e56b.chunk.js",
+    "main.js.map": "/static/js/main.5468e56b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.53e119e1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.53e119e1.js.map",
     "static/css/2.86fbdad3.chunk.css": "/static/css/2.86fbdad3.chunk.css",
-    "static/js/2.79266488.chunk.js": "/static/js/2.79266488.chunk.js",
-    "static/js/2.79266488.chunk.js.map": "/static/js/2.79266488.chunk.js.map",
-    "static/js/3.379bf51d.chunk.js": "/static/js/3.379bf51d.chunk.js",
-    "static/js/3.379bf51d.chunk.js.map": "/static/js/3.379bf51d.chunk.js.map",
+    "static/js/2.06c49874.chunk.js": "/static/js/2.06c49874.chunk.js",
+    "static/js/2.06c49874.chunk.js.map": "/static/js/2.06c49874.chunk.js.map",
+    "static/js/3.c21183d7.chunk.js": "/static/js/3.c21183d7.chunk.js",
+    "static/js/3.c21183d7.chunk.js.map": "/static/js/3.c21183d7.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.86fbdad3.chunk.css.map": "/static/css/2.86fbdad3.chunk.css.map",
-    "static/css/main.eef370b2.chunk.css.map": "/static/css/main.eef370b2.chunk.css.map",
-    "static/js/2.79266488.chunk.js.LICENSE.txt": "/static/js/2.79266488.chunk.js.LICENSE.txt",
+    "static/css/main.4dfb3fd2.chunk.css.map": "/static/css/main.4dfb3fd2.chunk.css.map",
+    "static/js/2.06c49874.chunk.js.LICENSE.txt": "/static/js/2.06c49874.chunk.js.LICENSE.txt",
     "static/media/apple-rainbow.41339b73.png": "/static/media/apple-rainbow.41339b73.png",
     "static/media/apple_logo_black.8fbc3843.svg": "/static/media/apple_logo_black.8fbc3843.svg",
     "static/media/avatar1.e5117e8e.jpg": "/static/media/avatar1.e5117e8e.jpg",
@@ -44,10 +44,10 @@
     "static/media/video.7d1ea6a9.mp4": "/static/media/video.7d1ea6a9.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb808dac.js",
+    "static/js/runtime-main.53e119e1.js",
     "static/css/2.86fbdad3.chunk.css",
-    "static/js/2.79266488.chunk.js",
-    "static/css/main.eef370b2.chunk.css",
-    "static/js/main.cda3275b.chunk.js"
+    "static/js/2.06c49874.chunk.js",
+    "static/css/main.4dfb3fd2.chunk.css",
+    "static/js/main.5468e56b.chunk.js"
   ]
 }
