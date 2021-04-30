@@ -25,7 +25,7 @@ export const CoinText = styled.h1`
     margin-bottom: 32px;
     text-align: center;
 
-    @media screen and (max-Width: 400px) {
+    @media screen and (max-Width: 468px) {
         font-size: 38px;
     }
 `
@@ -65,7 +65,7 @@ export const CoinRow = styled.div`
     width: 950px;
     
 
-    @media screen and (max-Width: 400px) {
+    @media screen and (max-Width: 468px) {
         width: 300px;
         overflow-x: scroll;
     }
@@ -90,7 +90,7 @@ export const CoinH1 = styled.h1`
     font-size: 16px;
     width: 150px;
 
-    @media screen and (max-Width: 400px) {
+    @media screen and (max-Width: 468px) {
         width: 140px;
     }
 `
@@ -112,7 +112,7 @@ export const CoinPrice = styled.p`
     width: 110px;
     margin: 0;
 
-    @media screen and (max-Width: 400px) {
+    @media screen and (max-Width: 468px) {
         width: 60px;
     }
 `
@@ -121,7 +121,7 @@ export const CoinVolume = styled.p`
     width: 200px;
     margin: 0;
 
-    @media screen and (max-Width: 400px) {
+    @media screen and (max-Width: 468px) {
         display: none;
     }
 `
@@ -136,7 +136,7 @@ export const CoinMarketCap = styled.p`
     width: 240px;
     margin: 0;
 
-    @media screen and (max-Width: 400px) {
+    @media screen and (max-Width: 468px) {
         display: none;
     }
 `
