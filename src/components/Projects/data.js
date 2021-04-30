@@ -32,7 +32,7 @@ import avocado5 from '../../images/avocados/avocado5.png'
 
 // iOS Card Data
 /////////////////////////////////////////////////////////////////
-
+ 
 export const iOSCard1 = {
     img: iosimg1,
     projectName: 'iOS Fructus App',

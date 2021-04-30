@@ -10,7 +10,7 @@ export const CoinApp = styled.div`
     align-items: center;
     color: white;
     background-color: #1a1a1c;
-
+    overflow: hidden;
 `
 
 export const CoinSearch = styled.div`
@@ -51,8 +51,8 @@ export const CoinInput = styled.input`
 
 
 export const CoinContainer = styled.div`
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 `
 
 export const CoinRow = styled.div`
@@ -63,9 +63,11 @@ export const CoinRow = styled.div`
     height: 80px;
     border-bottom: 1px solid #d7d7d7;
     width: 950px;
+    
 
     @media screen and (max-Width: 400px) {
-        width: 90px;
+        width: 300px;
+        overflow-x: scroll;
     }
 `
 
@@ -74,17 +76,23 @@ display: flex;
 align-items: center;
 padding-right: 24px;
 min-width: 300px;
+
 `
 
 export const CoinIMG = styled.img`
     height: 30px;
     width: 30px;
     margin-right: 10px;
+
 `
 
 export const CoinH1 = styled.h1`
     font-size: 16px;
     width: 150px;
+
+    @media screen and (max-Width: 400px) {
+        width: 140px;
+    }
 `
 
 export const CoinSymbol = styled.p`
@@ -104,11 +112,18 @@ export const CoinPrice = styled.p`
     width: 110px;
     margin: 0;
 
+    @media screen and (max-Width: 400px) {
+        width: 60px;
+    }
 `
 
 export const CoinVolume = styled.p`
     width: 200px;
     margin: 0;
+
+    @media screen and (max-Width: 400px) {
+        display: none;
+    }
 `
 
 export const CoinPriceChange = styled.p`
@@ -120,6 +135,10 @@ export const CoinPriceChange = styled.p`
 export const CoinMarketCap = styled.p`
     width: 240px;
     margin: 0;
+
+    @media screen and (max-Width: 400px) {
+        display: none;
+    }
 `
 
 
