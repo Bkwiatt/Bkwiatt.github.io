@@ -26,7 +26,8 @@ const playVideo = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>Brandon Kwiatkowski</HeroH1>
-                <HeroP>Software Developer</HeroP>
+                <HeroP>React | Javascript | CSS
+                </HeroP>
                 <HeroBtnWrapper>
                     <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover} smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                         Contact Me {hover ? <ArrowForward /> : <ArrowRight/>}

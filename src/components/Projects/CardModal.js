@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { CardWrapper, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo, ModalHrSmall, ProgressContainer } from './ProjectsElements'
+import { CardWrapperModal, ProjectsH1, ProjectsP, ProjectsHr, CardImgWrap, CardImg, CardInfo, ModalCloseButton, ModalH1, ModalImgWrap, ModalImg, ModalP, ModalHeader, ModalSocial, ModalHr, ModalContent, ModalLeft, ModalRight, ModalH4, ModalImgWrapSmall, CardCategory, ProjectsTypeLogo, ModalHrSmall, ProgressContainer } from './ProjectsElements'
 import ProgressBar from '../ProgressBar'
 import { FaGithub } from 'react-icons/fa'
 import Modal from 'react-modal'
 import './modalStyles.css'
 
 
-const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skill, img1, img2, img3, img4, img5 }) => {
+const CardModal = ({ projectName, projectTypeLogo, description, githubLink, img, skill, img1, img2, img3, img4, img5 }) => {
     Modal.setAppElement('#root')
     const [modalIsOpen, setShowModal] = useState(false);
 
@@ -23,7 +23,7 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skil
         
 
         <>
-            <CardWrapper onClick={openModal}>
+            <CardWrapperModal onClick={openModal}>
                 <CardImgWrap>
                     <CardCategory>
                         <ProjectsTypeLogo src={projectTypeLogo} alt="projetlogo" />
@@ -36,7 +36,7 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skil
                     <ProjectsP>{description}</ProjectsP>
                 </CardInfo>
                 
-            </CardWrapper>
+            </CardWrapperModal>
 
 
             {/* On card click, Modal opens */}
@@ -96,4 +96,4 @@ const Card = ({ projectName, projectTypeLogo, description, githubLink, img, skil
     )
 }
 
-export default Card
+export default CardModal

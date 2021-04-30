@@ -93,6 +93,23 @@ export const reactCard1 = {
     githubLink: "//www.github.com/Bkwiatt/Bkwiatt.github.io"
 }
 
+export const reactCard2 = {
+    img: react1,
+    projectName: 'React Crypto data API Utilization',
+    projectTypeLogo: reactLogo,
+    description: "Project is a crypto currency filter and all of the data displayed is being fetched from an API in real time",
+    githubLink: "//www.github.com/Bkwiatt/Bkwiatt.github.io",
+    projectLink: '/crypto'
+}
+export const reactCard3 = {
+    img: react1,
+    projectName: 'React To-Do List',
+    projectTypeLogo: reactLogo,
+    description: "Simple but clean looking To-Do list. Fits the aesthetic of the website and was implemented because I wanted to keep track of what I needed to do for this website",
+    githubLink: "//www.github.com/Bkwiatt/Bkwiatt.github.io",
+    projectLink: '/todo'
+}
+
 export const htmlCard1 = {
     img: html1,
     projectName: "Space Station Resort",

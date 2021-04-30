@@ -5,7 +5,7 @@ import Home from './pages';
 import ResumePage from './pages/resume';
 import ProjectsPage from './pages/projects'
 import TodoListPage from './pages/todo'
-import warzonestatsPage from './pages/warzonestats'
+import CryptoPage from './pages/crypto'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/resume" component={ResumePage} exact />
         <Route path="/projects" component={ProjectsPage} exact />
         <Route path="/todo" component={TodoListPage} exact />
-        <Route path="/warzonestats" component={warzonestatsPage} exact />
+        <Route path="/crypto" component={CryptoPage} exact />
       </HashRouter>   
     </Router>
   )

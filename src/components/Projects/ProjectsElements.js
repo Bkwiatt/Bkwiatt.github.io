@@ -49,7 +49,7 @@ export const ProjectsWrapper = styled.div`
     }
 `
 
-export const CardWrapper = styled.div`
+export const CardWrapperModal = styled.div`
     width: 350px;
     height: 600px;
     min-width: 350px;
@@ -64,6 +64,37 @@ export const CardWrapper = styled.div`
     transition: all 0.2s ease-in-out;
     overflow: hidden;
     border: 2px solid #01bf71;
+
+    &:hover {
+        transform: scale(1.01);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px rgba(1,191,113,2);
+    } 
+
+    @media screen and (max-width: 350px) {
+        min-width: 300px;
+    }
+
+`
+
+export const CardWrapperLink = styled(LinkR)`
+    width: 350px;
+    height: 600px;
+    min-width: 350px;
+    margin: 0px 10px 0px 10px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 450px;
+    box-shadow: 1px 1px 5px rgba(1,191,113,2);
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    border: 2px solid #01bf71;
+    text-decoration: none;
+    color: black;
 
     &:hover {
         transform: scale(1.01);
